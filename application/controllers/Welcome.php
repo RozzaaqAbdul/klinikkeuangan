@@ -26,6 +26,8 @@ class Welcome extends CI_Controller {
 		// 	$this->session->set_userdata($newdata);	
 		// 	redirect(site_url('result'), 'location');
 		// }
-		$this->load->view('welcome_message', $this->data);
+		$data['menu']     = 'menu';
+		$data['footer']		= 'footer'; 
+		$this->load->view('index', $data);
 	}
 }
