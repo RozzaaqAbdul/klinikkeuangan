@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Klinik Keuangan Page</title>
+  <title>Klinik Keuangan</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/klinik-logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -37,7 +37,12 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">MoneyClinic</a></h1>
+
+        <h1>
+          <img src="assets/img/klinik-logo.png" alt="" class="img-fluid">
+          <!--<img src="assets/img/text-klinik-keuangan.png" alt="" class="img-fluid"> -->
+          <a href="#intro" class="scrollto" >Klinik Keuangan</a>
+        </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -45,10 +50,10 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">Investasi</a></li>
-          <li><a href="#services">Perencanaan</a></li>
-          <li><a href="#team">Pelatihan</a></li>
-          <li><a href="#facts">Simulasi</a></li>
+          <li><a href="#about">Layanan</a></li>
+          <li><a href="#services">Simulasi</a></li>
+          <li><a href="#team">Artikel</a></li>
+          <li><a href="#facts">Testimoni</a></li>
           <!-- <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -57,7 +62,9 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li> -->
+          <!-- Contact comment
           <li><a href="#contact">Contact</a></li>
+          -->
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
