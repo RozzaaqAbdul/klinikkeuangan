@@ -9,14 +9,15 @@
 
         <div class="carousel-inner" role="listbox">
 
-          <div class="carousel-item active" style="background-image: url('assets/img/intro-carousel/1.jpg');">
-            <div class="carousel-container">
+          <div class="carousel-item active" style="background-image: url('assets/img/intro-carousel/bg-banner1.jpg');">
+            
+            <!-- <div class="carousel-container">
               <div class="carousel-content">
                 <h2>Karena Langit Tidak Selalu Secerah Ini</h2>
                 <p>Semua memang terasa indah saat langit secerah ini, dan kita semua mengharapkan kecerahan ini berlangsung selamanya. Sayangnya, langit tidak selalu secerah ini</p>
                 <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <div class="carousel-item" style="background-image: url('assets/img/intro-carousel/2.jpg');">

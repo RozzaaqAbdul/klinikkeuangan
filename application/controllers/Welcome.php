@@ -27,6 +27,11 @@ class Welcome extends CI_Controller {
 		// 	redirect(site_url('result'), 'location');
 		// }
 		$data['menu']     = 'menu';
+		$data['home']     = 'home';
+		$data['layanan']     = 'layanan';
+		$data['simulasi']     = 'simulasi';
+		$data['artikel']     = 'artikel';
+		$data['testimoni']     = 'testimoni';
 		$data['footer']		= 'footer'; 
 		$this->load->view('index', $data);
 	}
