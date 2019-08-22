@@ -29,6 +29,7 @@
             </div>
           </div>
 
+
           <div class="col-md-5 wow fadeInUp container" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
@@ -42,6 +43,7 @@
             </div>
           </div>
 
+
           <div class="col-md-5 wow fadeInUp container" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
@@ -54,6 +56,7 @@
               </p>
             </div>
           </div>
+
 
           <div class="col-md-5 wow fadeInUp container">
             <div class="about-col">

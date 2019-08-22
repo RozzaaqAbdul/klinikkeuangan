@@ -50,7 +50,11 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">Layanan</a></li>
+
           <li><a href="#services">Simulasi</a></li>
+
+          <li><a href="#services">Investasi</a></li>
+
           <li><a href="#team">Artikel</a></li>
           <li><a href="#facts">Testimoni</a></li>
           <!-- <li class="menu-has-children"><a href="">Drop Down</a>
