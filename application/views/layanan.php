@@ -13,7 +13,7 @@
 
         <div class="row about-cols">
 
-          <div class="col-md-3 wow fadeInUp">
+          <div class="col-md-5 wow fadeInUp container">
             <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
@@ -29,7 +29,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-md-5 wow fadeInUp container" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
@@ -42,7 +42,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-md-5 wow fadeInUp container" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-vision.jpg" alt="" class="img-fluid">
@@ -55,7 +55,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 wow fadeInUp">
+          <div class="col-md-5 wow fadeInUp container">
             <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
