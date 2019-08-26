@@ -8,13 +8,13 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
-  color: #666666;
+  background: #ffffff;
+  color: #000000;
   font-family: "Open Sans", sans-serif;
 }
 
 a {
-  color: #18d26e;
+  color: #bdbdbd;
   transition: 0.5s;
 }
 
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: #ffffff;
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  /*background: #000;*/
+  /*background: #fff;*/
 }
 
 #intro .carousel-item {
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .carousel-item::before {
   content: '';
-  /*background-color: rgba(0, 0, 0, 0.7);*/
+  /*background-color: #fff;*/
   position: absolute;
   height: 100%;
   width: 100%;
@@ -158,14 +158,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .carousel-container {
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 0;
-  top: 0;
-  left: 0;
   right: 0;
+  /*width: 424px;*/
+  height: 76px;
+  left: 0px;
+  top: 180px;
 }
 
 #intro .carousel-content {
@@ -179,6 +181,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+#intro h3 {
+font-family: "Lato";
+font-size: 36px;
+color: #110F24;
+margin-left: 180px;
+margin-bottom: 0px;
+}
+
 @media (max-width: 768px) {
   #intro h2 {
     font-size: 28px;
@@ -187,8 +197,18 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro p {
   width: 80%;
-  margin: 0 auto 30px auto;
-  color: #fff;
+  margin-left: 180px;
+  color: #828282;
+}
+
+#intro a {
+  color: #828282;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 180px;
 }
 
 @media (min-width: 1024px) {
@@ -345,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: #bdbdbd;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 13px;
@@ -559,7 +579,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Featured Services Section
 --------------------------------*/
 #featured-services {
-  background: #000;
+  background: #fff;
 }
 
 #featured-services .box {
@@ -588,6 +608,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #featured-services h4 a:hover {
+  color: #18d26e;
+}
+
+#featured-services h3 {
+  font-weight: 400;
+  font-family: "Lato"
+  margin: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+#featured-services h3 a {
+  color: #fff;
+}
+
+#featured-services h3 a:hover {
   color: #18d26e;
 }
 

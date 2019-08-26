@@ -4330,6 +4330,15 @@ tbody.collapse.show {
   border-radius: 0.25rem;
 }
 
+.card-simulasi {
+  width: 800px;
+  background-color: #fff;
+  /*background-image: url('assets/img/card-bg.png');*/
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4352,8 +4361,15 @@ tbody.collapse.show {
   padding: 1.25rem;
 }
 
+.card-body-simulasi {
+    height: 215px;
+    position: relative;
+    padding: 20px 15px 0;
+}
+
 .card-title {
   margin-bottom: 0.75rem;
+  color: #fff;
 }
 
 .card-subtitle {
@@ -4435,6 +4451,7 @@ tbody.collapse.show {
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
+
 
 .card-deck {
   display: -webkit-box;
