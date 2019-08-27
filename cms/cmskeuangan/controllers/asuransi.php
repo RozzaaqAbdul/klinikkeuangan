@@ -81,9 +81,9 @@ class Asuransi extends CI_Controller {
 	}	
 	
 	public function deldata($id="")	{	
-		$this->load->model(array('m_paket'));
+		$this->load->model(array('m_asuransi'));
 
-		$this->m_paket->delete(array('pak_id'=>$id));
-		redirect(site_url('paket'), 'location');
+		$this->m_asuransi->delete(array('id'=>$id));
+		redirect(site_url('asuransi'), 'location');
 	}		
 }

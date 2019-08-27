@@ -60,23 +60,30 @@ class Financial extends CI_Controller {
 	}
 
 	public function editdata($id="")	{
-		$this->load->model(array('m_asuransi'));
+		$this->load->model(array('m_financial'));
 		if ($this->input->post('edit_question')) {
 			
 			$admin = array(
 				'question' => $this->input->post('edit_question'),
-				'variable' => $this->input->post('edit_variable')
+				'variable_1' => $this->input->post('edit_variable_1'),
+				'variable_2' => $this->input->post('edit_variable_2'),
+				'variable_3' => $this->input->post('edit_variable_3'),
+				'variable_4' => $this->input->post('edit_variable_4'),
+				'value_1' => $this->input->post('edit_value_1'),
+				'value_2' => $this->input->post('edit_value_2'),
+				'value_3' => $this->input->post('edit_value_3'),
+				'value_4' => $this->input->post('edit_value_4'),
 			);
-			$this->m_asuransi->update(array('id'=>$id),$admin);
+			$this->m_financial->update(array('id'=>$id),$admin);
 	
-			redirect(site_url('asuransi'), 'location');
+			redirect(site_url('financial'), 'location');
 			die();
 		}
 
-		$this->data['asuransi'] = $this->m_asuransi->get(array('id'=>$id));
+		$this->data['financial'] = $this->m_financial->get(array('id'=>$id));
         $this->data['detailPage'] = '';
-        $this->data['titlePage'] = 'Edit Kecukupan Asuransi Jiwa';
-        $this->data['include'] = "v_asuransi_edit.php";
+        $this->data['titlePage'] = 'Edit Financial Health Check';
+        $this->data['include'] = "v_financial_edit.php";
 		$this->load->view('v_index',$this->data);
 	}	
 	

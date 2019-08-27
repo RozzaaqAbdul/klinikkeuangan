@@ -40,7 +40,7 @@
                             echo '<td class=" ">'.$row->value_4.'</td>';
                             echo '<td class=" ">
                                     <a onclick="location.href=\''.site_url('financial/editdata/'.$row->id).'\';" class="edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                                    <a onclick="if (confirm(\'Hapus Data -'.$row->question.'- ?\')) location.href=\''.site_url('user/deldata/'.$row->id).'\';" class="delete" data-toggle="modal"><i class="glyphicon glyphicon-trash"></i></a>
+                                    <a onclick="if (confirm(\'Hapus Data -'.$row->id.'- ?\')) location.href=\''.site_url('finacial/deldata/'.$row->id).'\';" class="delete" data-toggle="modal"><i class="glyphicon glyphicon-trash"></i></a>
                                   </td>';
                         echo '</tr>';
                                                     
