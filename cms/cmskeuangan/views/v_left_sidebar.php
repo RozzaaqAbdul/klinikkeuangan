@@ -14,7 +14,7 @@
 		
 		
         <li class="treeview <?php if($page == "Asuransi" || $page == "Add Asuransi") echo "menu-open";?>">
-          <a href="#">
+          <a>
             <i class="mdi mdi-receipt"></i>
             <span>Kecukupan Asuransi Jiwa</span>
             <span class="pull-right-container">
@@ -38,16 +38,22 @@
             </li>
           </ul>
         </li>
-        <li class="treeview">
-            <a href="#">
+        <li class="treeview <?php if($page == "Financial") echo "menu-open";?>">
+            <a>
               <i class="mdi mdi-receipt"></i>
               <span>Quick Financial Health Check</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-right pull-right"></i>
               </span>
             </a>
-            <ul class="treeview-menu">
-                <li><a href="pages/asuransijiwa.html"><i class="mdi mdi-toggle-switch-off"></i>List</a></li>
+            <ul class="treeview-menu" <?php if($page == "Financial") echo "style='display:block;'";?>>
+                <li>
+                <?php if ($page == "Financial") {?>
+                  <a href="<?=site_url("financial")?>" <?php if($page == "Financial") echo "style='opacity:1;'";?> href="<?=site_url("financial")?>"><i class="mdi mdi-toggle-switch"></i>List</a>
+                <?php }else{?>
+                  <a href="<?=site_url("financial")?>"><i class="mdi mdi-toggle-switch-off"></i>List</a>
+                <?php }?>
+                </li>
                 <li><a href="forms_validation.html"><i class="mdi mdi-toggle-switch-off"></i>Edit</a></li>
             </ul>
           </li>

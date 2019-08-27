@@ -24,4 +24,4 @@ $config['cur_tag_close'] = '</span>';
 $config['num_tag_open'] = '<span class="label label-info" style="padding:12px;color:#FFF;font-size:12px;margin-right:3px">';
 $config['num_tag_close'] = '</span>';
 
-$config['per_page'] = 20;
+$config['per_page'] = 10;
