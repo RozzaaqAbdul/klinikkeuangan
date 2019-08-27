@@ -25,8 +25,8 @@
                                     echo '<td class=" ">'.$row->question.'</td>';
                                     echo '<td class=" ">'.$row->variable.'</td>';
                                     echo '<td class=" ">
-                                    <a onclick="location.href=\''.site_url('user/editdata/'.$row->id).'\';" class="edit" data-toggle="modal"><i class="glyphicon glyphicon-pencil" data-toggle="tooltip" title="Edit"></i></a>
-                                    <a onclick="if (confirm(\'Hapus Data -'.$row->question.'- ?\')) location.href=\''.site_url('user/deldata/'.$row->id).'\';" class="delete" data-toggle="modal"><i class="glyphicon glyphicon-trash" data-toggle="tooltip" title="Delete"></i></a>
+                                            <a onclick="location.href=\''.site_url('asuransi/editdata/'.$row->id).'\';" class="edit"><i class="glyphicon glyphicon-pencil"></i></a>
+                                            <a onclick="if (confirm(\'Hapus Data -'.$row->question.'- ?\')) location.href=\''.site_url('user/deldata/'.$row->id).'\';" class="delete" data-toggle="modal"><i class="glyphicon glyphicon-trash"></i></a>
                                           </td>';
                                 echo '</tr>';
                                                     

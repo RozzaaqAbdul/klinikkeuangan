@@ -13,7 +13,7 @@
         <li class="header nav-small-cap"><i class="mdi mdi-drag-horizontal mr-5"></i>TABEL SIMULASI dan ARTIKEL</li> 
 		
 		
-        <li class="treeview <?php if($page == "Asuransi") echo "menu-open";?>">
+        <li class="treeview <?php if($page == "Asuransi" || $page == "Add Asuransi") echo "menu-open";?>">
           <a href="#">
             <i class="mdi mdi-receipt"></i>
             <span>Kecukupan Asuransi Jiwa</span>
@@ -21,7 +21,7 @@
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
-          <ul class="treeview-menu" <?php if($page == "Asuransi") echo "style='display:block;'";?>>
+          <ul class="treeview-menu" <?php if($page == "Asuransi" || $page == "Add Asuransi") echo "style='display:block;'";?>>
             <li>
             <?php if ($page == "Asuransi") {?>
               <a href="<?=site_url("asuransi")?>" <?php if($page == "Asuransi") echo "style='opacity:1;'";?> href="<?=site_url("asuransi")?>"><i class="mdi mdi-toggle-switch"></i>List</a>
@@ -29,7 +29,13 @@
               <a href="<?=site_url("asuransi")?>"><i class="mdi mdi-toggle-switch-off"></i>List</a>
             <?php }?>
             </li>
-            <li><a href="editasuransijiwa.html"><i class="mdi mdi-toggle-switch-off"></i>Edit</a></li>
+            <li>
+            <?php if ($page == "Add Asuransi") {?>
+              <a href="<?=site_url("asuransi/adddata")?>" <?php if($page == "Add Asuransi") echo "style='opacity:1;'";?> href="<?=site_url("asuransi/adddata")?>"><i class="mdi mdi-toggle-switch"></i>Add</a>
+            <?php }else{?>
+              <a href="<?=site_url("asuransi/adddata")?>"><i class="mdi mdi-toggle-switch-off"></i>Add</a>
+            <?php }?>
+            </li>
           </ul>
         </li>
         <li class="treeview">

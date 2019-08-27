@@ -40,41 +40,43 @@ class Asuransi extends CI_Controller {
 
 	public function adddata()
 	{	
-		$this->load->model(array('m_paket'));
-		if ($this->input->post('paknama')) {
+		$this->load->model(array('m_asuransi'));
+		if ($this->input->post('edit_question')) {
 			
 			$admin = array(
-				'pak_name' => $this->input->post('paknama'),
-				'pak_keterangan' => $this->input->post('pakket')
+				'question' => $this->input->post('edit_question'),
+				'variable' => $this->input->post('edit_variable')
 			);
-			$uid = $this->m_paket->add($admin);
+			$uid = $this->m_asuransi->add($admin);
 	
-			redirect(site_url('paket'), 'location');
+			redirect(site_url('asuransi'), 'location');
 			die();
 		}
 
-        $this->data['include'] = "v_paket_add.php";
-        $this->data['detailPage'] = '';
+        $this->data['include'] = "v_asuransi_adddata.php";
+        $this->data['detailPage'] = 'Add Asuransi';
+        $this->data['titlePage'] = 'Kecukupan Asuransi Jiwa';
 		$this->load->view('v_index',$this->data);
 	}
 
 	public function editdata($id="")	{
-		$this->load->model(array('m_paket'));
-		if ($this->input->post('paknama')) {
+		$this->load->model(array('m_asuransi'));
+		if ($this->input->post('edit_question')) {
 			
 			$admin = array(
-				'pak_name' => $this->input->post('paknama'),
-				'pak_keterangan' => $this->input->post('pakket')
+				'question' => $this->input->post('edit_question'),
+				'variable' => $this->input->post('edit_variable')
 			);
-			$this->m_paket->update(array('pak_id'=>$id),$admin);
+			$this->m_asuransi->update(array('id'=>$id),$admin);
 	
-			redirect(site_url('paket'), 'location');
+			redirect(site_url('asuransi'), 'location');
 			die();
 		}
 
-		$this->data['paket'] = $this->m_paket->get(array('pak_id'=>$id));
+		$this->data['asuransi'] = $this->m_asuransi->get(array('id'=>$id));
         $this->data['detailPage'] = '';
-        $this->data['include'] = "v_paket_edit.php";
+        $this->data['titlePage'] = 'Edit Kecukupan Asuransi Jiwa';
+        $this->data['include'] = "v_asuransi_edit.php";
 		$this->load->view('v_index',$this->data);
 	}	
 	
