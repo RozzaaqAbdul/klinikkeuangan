@@ -16,6 +16,7 @@ class Dashboard extends CI_Controller {
 
 		$this->data['include'] = "v_dashboard.php";
 		$this->data['detailPage'] = 'Dashboard';
+		$this->data['titlePage'] = 'Dashboard';
 		$this->load->view('v_index', $this->data);
 	}
 	

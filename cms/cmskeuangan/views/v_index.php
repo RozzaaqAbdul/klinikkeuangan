@@ -1,5 +1,6 @@
 <?php
   $page = $detailPage;
+  $title = $titlePage
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,11 +50,11 @@
   <div class="content-header">
 		<div class="d-flex align-items-center">
 			<div class="mr-auto">
-				<h3 class="page-title"><?=$page;?></h3>
+				<h3 class="page-title"><?=$title;?></h3>
 				<div class="d-inline-block align-items-center">
 					<nav>
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+							<li class="breadcrumb-item"><a><i class="mdi mdi-home-outline"></i></a></li>
 						</ol>
 					</nav>
 				</div>
@@ -113,7 +114,5 @@
 	
 	<!-- Superieur Admin dashboard demo (This is only for demo purposes) -->
 	<script src="<?php echo base_url(); ?>/assets/js/pages/dashboard.js"></script>
-	
-	
 </body>
 </html>
