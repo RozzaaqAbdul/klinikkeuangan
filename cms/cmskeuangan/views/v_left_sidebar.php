@@ -14,7 +14,7 @@
 		
 		
         <li class="treeview <?php if($page == "Asuransi" || $page == "Add Asuransi") echo "menu-open";?>">
-          <a>
+          <a href="#">
             <i class="mdi mdi-receipt"></i>
             <span>Kecukupan Asuransi Jiwa</span>
             <span class="pull-right-container">
@@ -38,15 +38,15 @@
             </li>
           </ul>
         </li>
-        <li class="treeview <?php if($page == "Financial") echo "menu-open";?>">
-            <a>
+        <li class="treeview <?php if($page == "Financial" || $page == "Add Financial") echo "menu-open";?>">
+            <a href="#">
               <i class="mdi mdi-receipt"></i>
               <span>Quick Financial Health Check</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-right pull-right"></i>
               </span>
             </a>
-            <ul class="treeview-menu" <?php if($page == "Financial") echo "style='display:block;'";?>>
+            <ul class="treeview-menu" <?php if($page == "Financial" || $page == "Add Financial") echo "style='display:block;'";?>>
                 <li>
                 <?php if ($page == "Financial") {?>
                   <a href="<?=site_url("financial")?>" <?php if($page == "Financial") echo "style='opacity:1;'";?> href="<?=site_url("financial")?>"><i class="mdi mdi-toggle-switch"></i>List</a>
@@ -54,7 +54,13 @@
                   <a href="<?=site_url("financial")?>"><i class="mdi mdi-toggle-switch-off"></i>List</a>
                 <?php }?>
                 </li>
-                <li><a href="forms_validation.html"><i class="mdi mdi-toggle-switch-off"></i>Edit</a></li>
+                <li>
+                <?php if ($page == "Add Financial") {?>
+                  <a href="<?=site_url("financial/adddata")?>" <?php if($page == "Add Financial") echo "style='opacity:1;'";?> href="<?=site_url("financial/adddata")?>"><i class="mdi mdi-toggle-switch"></i>Add</a>
+                <?php }else{?>
+                  <a href="<?=site_url("financial/adddata")?>"><i class="mdi mdi-toggle-switch-off"></i>Add</a>
+                <?php }?>
+                </li>
             </ul>
           </li>
           <li class="treeview">

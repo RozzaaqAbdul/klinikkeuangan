@@ -25,7 +25,7 @@
             <tbody>
             <?php
             if ($totalFinancial != 0) {
-                $i=1;
+                $i=1+$per_page;
                     foreach (is_object($financial) || is_array($financial) ? $financial : array() as $idx => $row) {
                         echo '<tr class="<?=$i%2==0?\'even\':\'odd\'?> pointer">';                                                   
                             echo '<td class=" ">'.$i.'</td>';
@@ -40,7 +40,7 @@
                             echo '<td class=" ">'.$row->value_4.'</td>';
                             echo '<td class=" ">
                                     <a onclick="location.href=\''.site_url('financial/editdata/'.$row->id).'\';" class="edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                                    <a onclick="if (confirm(\'Hapus Data -'.$row->id.'- ?\')) location.href=\''.site_url('finacial/deldata/'.$row->id).'\';" class="delete" data-toggle="modal"><i class="glyphicon glyphicon-trash"></i></a>
+                                    <a onclick="if (confirm(\'Hapus Data -'.$row->id.'- ?\')) location.href=\''.site_url('financial/deldata/'.$row->id).'\';" class="delete" data-toggle="modal"><i class="glyphicon glyphicon-trash"></i></a>
                                   </td>';
                         echo '</tr>';
                                                     
