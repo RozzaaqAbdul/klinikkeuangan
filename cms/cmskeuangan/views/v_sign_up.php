@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="<?php echo base_url(); ?>/images/favicon.ico">
+    <link rel="icon" href="../../images/favicon.ico">
 
-    <title>Superieur Admin - Log in </title>
+    <title>Superieur Admin - Sign Up </title>
   
 	<!-- Bootstrap 4.0-->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/vendor_components/bootstrap/dist/css/bootstrap.min.css">
@@ -23,12 +23,12 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/skins/_all-skins.css">
 
 </head>
-<body class="hold-transition bg-img" data-overlay="4">
+<body class="hold-transition bg-img rtl" data-overlay="4">
 	
 	<div class="auth-2-outer row align-items-center h-p100 m-0">
 		<div class="auth-2">
 		  <div class="auth-logo font-size-40">
-			<a class="text-white"><b>Superieur</b>Admin</a>
+			<a href="#" class="text-white"><b>Superieur</b>Admin</a>
 		  </div>
 		  <!-- /.login-logo -->
 		  <div class="auth-body">
@@ -38,27 +38,34 @@
 			<?php }?>
 			</p>
 
-			<form action="" method="post" class="form-element">
+			<form action="<?=site_url('welcome/sign_up');?>" method="post" class="form-element">
 			  <div class="form-group has-feedback">
-				<input type="email" name="lgn_user" class="form-control" placeholder="Email">
-				<span class="ion ion-email form-control-feedback"></span>
+				<input type="text" name="sign_up_nama" class="form-control" placeholder="Full name">
+				<span class="ion ion-person form-control-feedback "></span>
 			  </div>
 			  <div class="form-group has-feedback">
-				<input type="password" name="lgn_pass" class="form-control" placeholder="Password">
-				<span class="ion ion-locked form-control-feedback"></span>
+				<input type="email" name="sign_up_email" class="form-control" placeholder="Email">
+				<span class="ion ion-email form-control-feedback "></span>
+			  </div>
+			  <div class="form-group has-feedback">
+				<input type="password" name="sign_up_password" class="form-control" placeholder="Password">
+				<span class="ion ion-locked form-control-feedback "></span>
+			  </div>
+			  <div class="form-group has-feedback">
+				<input type="password" name="sign_up_retype_password" class="form-control" placeholder="Retype password">
+				<span class="ion ion-log-in form-control-feedback "></span>
 			  </div>
 			  <div class="row">
 				<!-- /.col -->
 				<div class="col-12 text-center">
-				  <button type="submit" class="btn btn-block mt-10 btn-success">SIGN IN</button>
+				  <button type="submit" class="btn btn-block mt-10 btn-success">SIGN UP</button>
 				</div>
 				<!-- /.col -->
 			  </div>
 			</form>
 
-			<div class="text-center text-white">
 			<div class="margin-top-30 text-center">
-				<p>Don't have an account? <a href="<?=site_url("welcome/sign_up")?>" class="text-info m-l-5">Sign Up</a></p>
+				<p>Already have an account? <a href="<?=site_url("welcome")?>" class="text-info m-l-5">Sign In</a></p>
 			</div>
 
 		  </div>
