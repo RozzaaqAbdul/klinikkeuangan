@@ -4361,6 +4361,10 @@ tbody.collapse.show {
   padding: 1.25rem;
 }
 
+.card-simulasi {
+    width: 50%;
+}
+
 .card-body-simulasi {
     height: 215px;
     position: relative;
