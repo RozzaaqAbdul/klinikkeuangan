@@ -30,7 +30,7 @@ class Welcome extends CI_Controller {
 		$data['home']     = 'home';
 		$data['layanan']     = 'layanan';
 		$data['simulasi']     = 'simulasi';
-		$data['artikel']     = 'artikel';
+		$data['artikel']     = 'artikel2';
 		$data['testimoni']     = 'testimoni';
 		$data['footer']		= 'footer'; 
 		$this->load->view('index', $data);

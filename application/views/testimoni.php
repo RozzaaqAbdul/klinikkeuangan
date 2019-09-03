@@ -7,7 +7,7 @@
 
         <header class="section-header">
           <h3>Testimoni</h3>
-          <p>Komentar dari beberapa klien kami mengenai layanan yang telah kami berikan</p>
+          <p>Komentar dari beberapa klien kami mengenai layanan yang telah kami berikan.</p>
         </header>
 
         <!--Section: Testimonials-->

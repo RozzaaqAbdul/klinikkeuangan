@@ -14,13 +14,14 @@
     <!--==========================
       Call To Action Section
     ============================-->
-    <section id="call-to-action" class="wow fadeIn">
+    <!-- <section id="call-to-action" class="wow fadeIn">
       <div class="container text-center">
-        <h3>Call To Action</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Call To Action</a>
+        <h3>Menyongsong Masa Depan Dengan Bekal Pendidikan Terbaik</h3>
+        <p> Artikel Pendek Mengenai Perencanaan Pendidikan.</p>
+        <a class="cta-btn" href="#">Lihat Semua Artikel</a>
       </div>
-    </section><!-- #call-to-action -->
+    </section> -->
+    <!-- #call-to-action -->
 
 <!--  Call Artikel Page -->
 <?php $this->load->view($artikel);?>
