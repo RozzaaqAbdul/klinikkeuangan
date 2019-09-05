@@ -31,7 +31,7 @@ class Welcome extends CI_Controller {
 		$data['layanan']     = 'layanan';
 		$data['simulasi']     = 'simulasi';
 		$data['artikel']     = 'artikel2';
-		$data['testimoni']     = 'testimoni';
+		$data['testimoni']     = 'testimoni2';
 		$data['footer']		= 'footer'; 
 		$this->load->view('index', $data);
 	}

@@ -21,7 +21,7 @@
 
           <div class="col-md-5 box wow bounceInUp container" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Money Health Check</a></h4>
+            <h4 class="title"><a href="">Finance Health Check</a></h4>
             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             <p class=""><a href="#" class="btn btn-warning" style="color: #fff; font-size: 12px; margin-left: 60px; margin-top: 15px;">Hitung Simulasi </a></p>
           </div>

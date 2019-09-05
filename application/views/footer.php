@@ -6,13 +6,13 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>MoneyClinic</h3>
+          <div class="col-lg-3 col-md-3 footer-info">
+            <h5 ><img src="assets/img/klinik-logo.png"> <a href="#intro" style="color: #1cac58;"><strong>Klinik Keuangan</strong></a></h5>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Menu</h4>
             <ul>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Investasi</a></li>
@@ -22,8 +22,18 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Produk Kami</h4>
+            
+              <p><a href="#">Asuransi Jiwa</a></p>
+              <p><a href="#">Asuransi Pendidikan</a></p>
+              <p><a href="#">Dana Pensiun</a></p>
+              <p><a href="#">Finance Health Check</a></p>
+            
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-contact">
+            <h4>Alamat Kami</h4>
             <p>
               A108 Adam Street <br>
               New York, NY 535022<br>
@@ -42,9 +52,9 @@
 
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+          <div class="col-lg-2 col-md-6 footer-newsletter">
+            <h4>Informasi Lain</h4>
+            <p>Jika anda ingin mengikuti update informasi tentang kami silahkan subscribe kami dan masukan email pada link subscribe dibawah ini.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit"  value="Subscribe">
             </form>
@@ -56,7 +66,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
+        &copy; Copyright <a href="https://klinikkeuangan.com/"><strong>klinikkeuangan.com</strong></a>.
       </div>
       <div class="credits">
         <!--
@@ -65,7 +75,7 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
         -->
-        Best <a href="https://bootstrapmade.com/">Bootstrap Templates</a> by BootstrapMade
+        <!-- Best <a href="https://bootstrapmade.com/">Bootstrap Templates</a> by BootstrapMade -->
       </div>
     </div>
   </footer><!-- #footer -->
