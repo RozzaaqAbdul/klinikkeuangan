@@ -12,31 +12,32 @@ class Financial extends CI_Controller {
 
 	public function index()
 	{	
-		$this->load->model(array('m_financial'));
-		$this->load->library('pagination');
-		$this->load->config('pagination');
-
-		$this->data["totalFinancial"] = $this->m_financial->total(array('count'=>1,'search'=>$this->input->get('search')));	
-		$config['total_rows'] = $this->data["totalFinancial"];
-		$config['page_query_string'] = TRUE;
-
-		$config['base_url'] = site_url('financial/index/?search='.$this->input->get('search'));
-		$config["uri_segment"] = 3;
-		$page = ($this->input->get('per_page')) ? $this->input->get('per_page') : 0;
-		$this->pagination->initialize($config); 
-
-
-		if ($this->input->get('search')) {
-			$this->data['financial'] = $this->m_financial->get(array('search'=>$this->input->get('search')));
-		}else{
-			$this->data['financial'] = $this->m_financial->get(array('limit'=>$this->config->item('per_page'),'offset'=>$page));
-		}
-
         $this->data['include'] = "v_financial_list.php";
 		$this->data['detailPage'] = 'Financial';
-		$this->data['per_page'] = $page;
         $this->data['titlePage'] = 'Quick Financial Health Check';
 		$this->load->view('v_index',$this->data);
+	}
+
+	public function viewFinancial()
+	{
+		$this->load->model(array('m_financial'));
+		$search = $_POST['search']['value']; 
+		$limit = $_POST['length']; 
+		$start = $_POST['start']; 
+		$order_index = $_POST['order'][0]['column']; 
+		$order_field = $_POST['columns'][$order_index]['data']; 
+		$order_ascdesc = $_POST['order'][0]['dir']; 
+		$sql_total = $this->m_financial->count_all(); 
+		$sql_data = $this->m_financial->filter($search, $limit, $start, $order_field, $order_ascdesc); 
+		$sql_filter = $this->m_financial->count_filter($search); 
+		$callback = array(
+			'draw'=>$_POST['draw'], 
+			'recordsTotal'=>$sql_total,
+			'recordsFiltered'=>$sql_filter,
+			'data'=>$sql_data
+		);
+		header('Content-Type: application/json');
+		echo json_encode($callback); 
 	}
 
 	public function adddata()

@@ -12,30 +12,32 @@ class Asuransi extends CI_Controller {
 
 	public function index()
 	{	
-		$this->load->model(array('m_asuransi'));
-		$this->load->library('pagination');
-		$this->load->config('pagination');
-
-		$this->data["total"] = $this->m_asuransi->total(array('count'=>1,'search'=>$this->input->get('search')));	
-		$config['total_rows'] = $this->data["total"];
-		$config['page_query_string'] = TRUE;
-
-		$config['base_url'] = site_url('asuransi/index/?search='.$this->input->get('search'));
-		$config["uri_segment"] = 3;
-		$page = ($this->input->get('per_page')) ? $this->input->get('per_page') : 0;
-		$this->pagination->initialize($config); 
-
-
-		if ($this->input->get('search')) {
-			$this->data['asuransi'] = $this->m_asuransi->get(array('search'=>$this->input->get('search')));
-		}else{
-			$this->data['asuransi'] = $this->m_asuransi->get(array('limit'=>$this->config->item('per_page'),'offset'=>$page));
-		}
-
         $this->data['include'] = "v_asuransi_list.php";
         $this->data['detailPage'] = 'Asuransi';
         $this->data['titlePage'] = 'Kecukupan Asuransi Jiwa';
 		$this->load->view('v_index',$this->data);
+	}
+
+	public function viewAsuransi()
+	{
+		$this->load->model(array('m_asuransi'));
+		$search = $_POST['search']['value']; 
+		$limit = $_POST['length']; 
+		$start = $_POST['start']; 
+		$order_index = $_POST['order'][0]['column']; 
+		$order_field = $_POST['columns'][$order_index]['data']; 
+		$order_ascdesc = $_POST['order'][0]['dir']; 
+		$sql_total = $this->m_asuransi->count_all(); 
+		$sql_data = $this->m_asuransi->filter($search, $limit, $start, $order_field, $order_ascdesc); 
+		$sql_filter = $this->m_asuransi->count_filter($search); 
+		$callback = array(
+			'draw'=>$_POST['draw'], 
+			'recordsTotal'=>$sql_total,
+			'recordsFiltered'=>$sql_filter,
+			'data'=>$sql_data
+		);
+		header('Content-Type: application/json');
+		echo json_encode($callback); 
 	}
 
 	public function adddata()

@@ -34,29 +34,6 @@ class M_financial extends CI_Model
 			return $query->result();
 		}
 	}
-
-	function total($options = array()){
-		$this->db->select('count(*) as total', FALSE);
-		$qualificationArray = array('id','question','variable_1','variable_2','variable_3','variable_4','value_1','value_2','value_3','value_4');
-		if(isset($options['search']) && !empty($options['search'])) {
-			foreach($qualificationArray as $qualifier){
-				$this->db->or_like($this->table.'.'.$qualifier, $options['search']);
-			}
-		}
-		
-		if(isset($options['count']) && !empty($options['count'])) {
-			foreach($qualificationArray as $qualifier){
-				if(isset($options[$qualifier])) $this->db->where($qualifier, $options[$qualifier]);
-			}
-		}
-		$query = $this->db->get($this->table);
-		$tot = $query->row(0);
-		return $tot->total;
-    }
-
-    function count(){
-        return $this->db->count_all_results($this->table);
-    }
     
 	function add($input=array()){
 		if(empty($input)) return;
@@ -80,4 +57,36 @@ class M_financial extends CI_Model
 		$this->db->delete($this->table, $id); 
 	}
 
+	//Datatable function fetch_array data
+	function filter($search, $limit, $start, $order_field, $order_ascdesc){
+		$this->db->or_like('question', $search);
+		$this->db->or_like('variable_1', $search);
+		$this->db->or_like('variable_2', $search);
+		$this->db->or_like('variable_3', $search);
+		$this->db->or_like('variable_4', $search);
+		$this->db->or_like('value_1', $search);
+		$this->db->or_like('value_2', $search);
+		$this->db->or_like('value_3', $search);
+		$this->db->or_like('value_4', $search);
+		$this->db->order_by($order_field, $order_ascdesc);
+		$this->db->limit($limit, $start);
+		return $this->db->get('financial_health')->result_array();
+	}
+	
+	function count_all(){
+		return $this->db->count_all('financial_health');
+	}
+
+	public function count_filter($search){
+		$this->db->or_like('question', $search);
+		$this->db->or_like('variable_1', $search);
+		$this->db->or_like('variable_2', $search);
+		$this->db->or_like('variable_3', $search);
+		$this->db->or_like('variable_4', $search);
+		$this->db->or_like('value_1', $search);
+		$this->db->or_like('value_2', $search);
+		$this->db->or_like('value_3', $search);
+		$this->db->or_like('value_4', $search); 
+		return $this->db->get('financial_health')->num_rows(); 
+	}
 }

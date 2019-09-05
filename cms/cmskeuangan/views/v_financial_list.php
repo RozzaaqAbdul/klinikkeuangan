@@ -2,11 +2,11 @@
         <div class="table-title">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2>Quick Financial Health Check</h2>
+                    <h3>Quick Financial Health Check</h3>
                 </div>
             </div>
         </div>
-        <table class="table table-striped table-hover">
+        <table class="table table-striped table-hover" id="financial-health">
             <thead>
                 <tr>
                     <th>No</th>
@@ -23,37 +23,58 @@
                 </tr>
             </thead>
             <tbody>
-            <?php
-            if ($totalFinancial != 0) {
-                $i=1+$per_page;
-                    foreach (is_object($financial) || is_array($financial) ? $financial : array() as $idx => $row) {
-                        echo '<tr class="<?=$i%2==0?\'even\':\'odd\'?> pointer">';                                                   
-                            echo '<td class=" ">'.$i.'</td>';
-                            echo '<td class=" ">'.$row->question.'</td>';
-                            echo '<td class=" ">'.$row->variable_1.'</td>';
-                            echo '<td class=" ">'.$row->variable_2.'</td>';
-                            echo '<td class=" ">'.$row->variable_3.'</td>';
-                            echo '<td class=" ">'.$row->variable_4.'</td>';
-                            echo '<td class=" ">'.$row->value_1.'</td>';
-                            echo '<td class=" ">'.$row->value_2.'</td>';
-                            echo '<td class=" ">'.$row->value_3.'</td>';
-                            echo '<td class=" ">'.$row->value_4.'</td>';
-                            echo '<td class=" ">
-                                    <a onclick="location.href=\''.site_url('financial/editdata/'.$row->id).'\';" class="edit"><i class="glyphicon glyphicon-pencil"></i></a>
-                                    <a onclick="if (confirm(\'Hapus Data -'.$row->id.'- ?\')) location.href=\''.site_url('financial/deldata/'.$row->id).'\';" class="delete" data-toggle="modal"><i class="glyphicon glyphicon-trash"></i></a>
-                                  </td>';
-                        echo '</tr>';
-                                                    
-                        $i++;
-                    }
-            } else {
-                echo '<td colspan="3" style="text-align:center;"><i>Tidak Ada Data</i></td>';
-            }
-            ?>
             </tbody>
         </table>
-        <div class="btn-toolbar">
-            <?php echo $this->pagination->create_links(); ?>
-        </div>
     </div>
 </div>
+
+<script>
+    var tabel = null;
+    $(document).ready(function() {
+        tabel = $('#financial-health').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "ordering": true, 
+            "order": [[ 1, 'asc' ]],
+            "ajax":
+            {
+                "url": "<?php echo base_url('index.php/financial/viewFinancial') ?>", // URL file untuk proses select datanya
+                "type": "POST"
+            },
+            "deferRender": true,
+            "aLengthMenu": [[5, 10, 50],[ 5, 10, 50]],
+            "columns": [
+                { "data": "id" },
+                { "data": "question" },  
+                { "data": "variable_1" },
+                { "data": "variable_2" }, 
+                { "data": "variable_3" },
+                { "data": "variable_4" },
+                { "data": "value_1" },
+                { "data": "value_2" },
+                { "data": "value_3" },
+                { "data": "value_4" }, 
+                { "data": "id", "render": function ( data, type, row ) { // Tampilkan kolom aksi
+                        var html  = "<a class='btn btn-default btn-sm' href='financial/editdata/"+ data +"'>Edit</a>"
+                        html += "<a style='color:white;margin-left:5px;' class='btn btn-danger btn-sm' onclick=Delete("+ data +")>Delete</a>"
+                        return html
+                    },
+                    "orderable": false,
+                    "searchable": false
+                },
+            ],
+        });
+        tabel.on( 'order.dt search.dt', function () {
+            tabel.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+            } );
+        }).draw();
+    });
+
+    function Delete(id)
+    {
+        if (confirm("Are You Sure to Delete this Record ?")) {
+            location.href='financial/deldata/' + id;
+        }
+    }
+</script>

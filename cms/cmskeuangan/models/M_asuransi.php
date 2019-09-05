@@ -34,29 +34,6 @@ class M_asuransi extends CI_Model
 			return $query->result();
 		}
 	}
-
-	function total($options = array()){
-		$this->db->select('count(*) as total', FALSE);
-		$qualificationArray = array('id','question');
-		if(isset($options['search']) && !empty($options['search'])) {
-			foreach($qualificationArray as $qualifier){
-				$this->db->or_like($this->table.'.'.$qualifier, $options['search']);
-			}
-		}
-		
-		if(isset($options['count']) && !empty($options['count'])) {
-			foreach($qualificationArray as $qualifier){
-				if(isset($options[$qualifier])) $this->db->where($qualifier, $options[$qualifier]);
-			}
-		}
-		$query = $this->db->get($this->table);
-		$tot = $query->row(0);
-		return $tot->total;
-    }
-
-    function count(){
-        return $this->db->count_all_results($this->table);
-    }
     
 	function add($input=array()){
 		if(empty($input)) return;
@@ -78,6 +55,25 @@ class M_asuransi extends CI_Model
 	function delete($id=array()){
 		if(empty($id)) return;
 		$this->db->delete($this->table, $id); 
+	}
+
+	//Datatable function fetch_array data
+	function filter($search, $limit, $start, $order_field, $order_ascdesc){
+		$this->db->or_like('question', $search);
+		$this->db->or_like('variable', $search);
+		$this->db->order_by($order_field, $order_ascdesc);
+		$this->db->limit($limit, $start);
+		return $this->db->get('asuransi')->result_array();
+	}
+	
+	function count_all(){
+		return $this->db->count_all('asuransi');
+	}
+
+	public function count_filter($search){
+		$this->db->or_like('question', $search);
+		$this->db->or_like('variable', $search); 
+		return $this->db->get('asuransi')->num_rows(); 
 	}
 
 }

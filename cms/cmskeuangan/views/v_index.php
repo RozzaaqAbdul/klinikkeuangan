@@ -33,8 +33,10 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/vendor_components/morris.js/morris.css">
 	
 	<!-- Data Table-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/vendor_components/datatable/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 
+	<!-- jQuery 3 -->
+	<script src="<?php echo base_url(); ?>/assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js"></script>
   </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -69,11 +71,6 @@
 	</div>
 </div>
 <!-- ./wrapper -->
-  	
-	 
-	  
-	<!-- jQuery 3 -->
-	<script src="<?php echo base_url(); ?>/assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js"></script>
 	
 	<!-- jQuery UI 1.11.4 -->
 	<script src="<?php echo base_url(); ?>/assets/vendor_components/jquery-ui/jquery-ui.js"></script>
@@ -114,5 +111,9 @@
 	
 	<!-- Superieur Admin dashboard demo (This is only for demo purposes) -->
 	<script src="<?php echo base_url(); ?>/assets/js/pages/dashboard.js"></script>
+
+	<!-- Data Table-->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+	
 </body>
 </html>
