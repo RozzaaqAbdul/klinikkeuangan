@@ -77,5 +77,28 @@ class M_user extends CI_Model {
 		if(empty($id)) return;
 		$this->db->delete($this->table, $id); 
 	}
+
+	//Datatable function fetch_array data
+	function filter($search, $limit, $start, $order_field, $order_ascdesc){
+		$this->db->or_like('nama', $search);
+		$this->db->or_like('email', $search);
+		$this->db->or_like('foto', $search);
+		$this->db->or_like('status', $search);
+		$this->db->order_by($order_field, $order_ascdesc);
+		$this->db->limit($limit, $start);
+		return $this->db->get('user')->result_array();
+	}
+	
+	function count_all(){
+		return $this->db->count_all('user');
+	}
+
+	public function count_filter($search){
+		$this->db->or_like('nama', $search);
+		$this->db->or_like('email', $search);
+		$this->db->or_like('foto', $search);
+		$this->db->or_like('status', $search);
+		return $this->db->get('user')->num_rows(); 
+	}
 }
 ?>
