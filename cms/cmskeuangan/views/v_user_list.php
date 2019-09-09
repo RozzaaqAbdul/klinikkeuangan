@@ -12,7 +12,6 @@
                 <th>No</th>
                 <th>Username</th>
                 <th>Email</th>
-                <th>Foto</th>
                 <th>Status</th>
                 <th>Actions</th>
             </tr>
@@ -42,7 +41,6 @@
                 { "data": "id" },
                 { "data": "nama" },  
                 { "data": "email" },
-                { "data": "foto" },
                 { "render": function ( data, type, row ) {  
                         var html = ""
                         if(row.status == 'Y'){ 
@@ -54,7 +52,7 @@
                     }
                 },
                 { "data": "id", "render": function ( data, type, row ) { // Tampilkan kolom aksi
-                        var html  = "<a class='btn btn-default btn-sm' href='asuransi/editdata/"+ data +"'>Edit</a>"
+                        var html  = "<a class='btn btn-default btn-sm' href='user/editdata/"+ data +"'>Edit</a>"
                         html += "<a style='color:white;margin-left:5px;' class='btn btn-danger btn-sm' onclick=Delete("+ data +")>Delete</a>"
                         return html
                     },

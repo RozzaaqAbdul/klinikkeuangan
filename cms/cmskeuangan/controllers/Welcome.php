@@ -20,8 +20,7 @@ class Welcome extends CI_Controller {
 								   'email'  	=> $is_permit[0]->email,
 								   'group'  	=> $is_permit[0]->tipe,
 								   'uid'  		=> $is_permit[0]->id,
-								   'username'  	=> $is_permit[0]->nama,
-								   'avatar'  	=> USER_IMG.$is_permit[0]->foto
+								   'username'  	=> $is_permit[0]->nama
 							   );
 				$this->session->set_userdata($newdata);	
 				redirect(site_url('dashboard'), 'location');

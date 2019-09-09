@@ -10,7 +10,7 @@
             Dashboard
           </a>
         </li>
-        <li class="treeview <?php if($page == "User" || $page == "Add Asuransi") echo "menu-open";?>">
+        <li class="treeview <?php if($page == "User" || $page == "Add User") echo "menu-open";?>">
           <a href="#">
             <i class="mdi mdi-account"></i>
             <span>User List</span>
@@ -18,19 +18,19 @@
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
-          <ul class="treeview-menu" <?php if($page == "User" || $page == "Add Asuransi") echo "style='display:block;'";?>>
+          <ul class="treeview-menu" <?php if($page == "User" || $page == "Add User") echo "style='display:block;'";?>>
             <li>
             <?php if ($page == "User") {?>
-              <a href="<?=site_url("user")?>" <?php if($page == "User") echo "style='opacity:1;'";?> href="<?=site_url("asuransi")?>"><i class="mdi mdi-toggle-switch"></i>List</a>
+              <a href="<?=site_url("user")?>" <?php if($page == "User") echo "style='opacity:1;'";?> href="<?=site_url("user")?>"><i class="mdi mdi-toggle-switch"></i>List</a>
             <?php }else{?>
               <a href="<?=site_url("user")?>"><i class="mdi mdi-toggle-switch-off"></i>List</a>
             <?php }?>
             </li>
             <li>
-            <?php if ($page == "Add Asuransi") {?>
-              <a href="<?=site_url("asuransi/adddata")?>" <?php if($page == "Add Asuransi") echo "style='opacity:1;'";?> href="<?=site_url("asuransi/adddata")?>"><i class="mdi mdi-toggle-switch"></i>Add</a>
+            <?php if ($page == "Add User") {?>
+              <a href="<?=site_url("user/adddata")?>" <?php if($page == "Add User") echo "style='opacity:1;'";?> href="<?=site_url("user/adddata")?>"><i class="mdi mdi-toggle-switch"></i>Add</a>
             <?php }else{?>
-              <a href="<?=site_url("asuransi/adddata")?>"><i class="mdi mdi-toggle-switch-off"></i>Add</a>
+              <a href="<?=site_url("user/adddata")?>"><i class="mdi mdi-toggle-switch-off"></i>Add</a>
             <?php }?>
             </li>
           </ul>
