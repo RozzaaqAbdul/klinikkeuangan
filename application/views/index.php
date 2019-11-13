@@ -1,5 +1,5 @@
 <!--  Call Menu Page -->
-<?php $this->load->view($menu);?>
+<!-- <?php $this->load->view($menu);?> -->
 
 <!--  Call Home Page -->
 <?php $this->load->view($home);?>

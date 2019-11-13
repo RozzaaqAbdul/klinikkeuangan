@@ -4,10 +4,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends CI_Controller {
 	public function index()
 	{
-		// $this->load->model(array('m_asuransi'));
+		$this->load->model(array('m_asuransi'));
 
-		// $this->data["total"] = $this->m_asuransi->total(array('count'=>1,'search'=>$this->input->get('search')));
-		// $this->data['asuransi'] = $this->m_asuransi->get(array('limit'=>$this->config->item('per_page')));
+		$this->data["total"] = $this->m_asuransi->total(array('count'=>1,'search'=>$this->input->get('search')));
+		$this->data['asuransi'] = $this->m_asuransi->get(array('limit'=>$this->config->item('per_page')));
 
 		// //check input data
 		// if ($this->input->post('var_a')) {
@@ -35,6 +35,5 @@ class Welcome extends CI_Controller {
 // 		$data['footer']		= 'footer'; 
 // 		$this->load->view('index', $data);
 		$this->load->view('newhome');
-
 	}
 }
