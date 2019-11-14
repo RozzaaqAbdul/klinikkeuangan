@@ -277,7 +277,7 @@
             <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
             <h4 class="title"><a href="">Perencanaan Proteksi dan Asuransi Jiwa</a></h4>
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            <p class=""><a href="<?php echo base_url('asuransi_jiwa');?>" class="btn btn-danger" style="color: #fff; font-size: 12px; margin-left: 60px; margin-top: 15px;">Hitung Simulasi </a></p>
+            <p class=""><a href="<?php echo base_url();?>asuransi_jiwa" class="btn btn-danger" style="color: #fff; font-size: 12px; margin-left: 60px; margin-top: 15px;">Hitung Simulasi </a></p>
           </div>
 
           <div class="col-md-5 box wow bounceInUp container" data-wow-duration="1.4s">
