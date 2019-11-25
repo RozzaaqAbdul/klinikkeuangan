@@ -91,78 +91,62 @@
 
   <section id="testimonials">
     <div class="intro-container">
-        <div class="col-sm-12" style="background: url('assets/img/home/Header Background RED.svg'); background-repeat: no-repeat; background-size: cover; height:100vh">
-            <div class="row" style="padding-top:0px">
-            	<div class="col-sm-9 d-none d-sm-block" style="padding-left:30vw;padding-top:5vw; z-index: 0;">
-            		<div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div>
-            	<form id="simulasi-jiwa-form" method="post" action="<?php echo base_url()?>asuransi_jiwa/insert" role="form">
-			    <div class="form-group">
-			    	<strong>
-				    <label for="exampleInputEmail1">Alamat Email</label>
-				    </strong>
-				    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				  	</div>
+      <div class="col-sm-12" style="background: url('assets/img/home/Header Background RED.svg'); background-repeat: no-repeat; background-size: cover; height:100vh">
+        <div class="row" style="padding-top:0px">
+            <div class="col-sm-12 d-none d-sm-block" style="padding-left:5vw;padding-top:5vw; z-index: 0;">
+              <div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div>
+    <form id="simulasi-jiwa-form" method="post" action="<?php echo base_url()?>financial_healthcheck/insert" role="form">
+    <table class="table table-responsive table-striped table-bordered table-hover" style="font-size: 10px;">
+     <thead>
+         <tr>
+            <th style="width: 5%; text-align: center">No</th>
+            <th style="width: 35%; text-align: center">Pertanyaan</th>
+            <th style="width: 15%; text-align: center">Variabel 1</th>
+            <th style="width: 15%; text-align: center">Variabel 2</th>
+            <th style="width: 15%; text-align: center">Variabel 3</th>
+            <th style="width: 15%; text-align: center">Variabel 4</th>
+         </tr>
+     </thead>
+     <tbody>
+      <?php $i=1; $no=1;
+        foreach ($data as $row) { ?>
+     
+         <tr>
+          <td align="center"><?php echo $no?> </td>
+          <td >
+            <label><?php echo $row->question ?></label>    
+          </td>
+          <td>
+            <label><input onkeyup="calculate()" onchange="calculate()" type="radio" id='variabel1' name="value_<?php echo $i?>" value="<?php echo $row->value_1 ?>"><?php echo $row->variable_1 ?></label>
+          </td>
+          <td>
+            <label><input onkeyup="calculate()" onchange="calculate()" type="radio" id='variabel2' name="value_<?php echo $i?>" value="<?php echo $row->value_2 ?>"><?php echo $row->variable_2 ?></label>
+          </td>
+          <td>
+            <label><input onkeyup="calculate()" onchange="calculate()"  type="radio" id='variabel3' name="value_<?php echo $i?>" value="<?php echo $row->value_3 ?>"><?php echo $row->variable_3 ?></label>
+          </td>
+          <td>
+              <label><input onkeyup="calculate()" onchange="calculate()"  type="radio" id='variabel4' name="value_<?php echo $i?>" value="<?php echo $row->value_4 ?>"><?php echo $row->variable_4 ?></label>
+          </td>
+         </tr>
 
-			    <div class="form-group">
-			    	<strong>
-			      <label for="validationDefaultUsername">Berapa nilai pertanggungan asuransi jiwa yang telah Anda miliki saat ini (dalam juta Rupiah) ?</label>
-			      </strong>
-			      <div class="input-group">
-			        <div class="input-group-prepend">
-			          <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
-			        </div>
-			        <input type="number" class="form-control" id="value1" name="value1" placeholder="1000000" aria-describedby="inputGroupPrepend2" onchange="calculate()"  required>
-			      </div>
-			    </div>
+         <?php $i++; $no++;
+            } 
+          ?>
 
-			    <div class="form-group">
-			    	<strong>
-			      	<label for="validationDefaultUsername">Berapa estimasi biaya hidup yang dibutuhkan keluarga Anda per bulan (dalam juta Rupiah) ?</label>
-			      	</strong>
-			      <div class="input-group">
-			        <div class="input-group-prepend">
-			          <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
-			        </div>
-			        <input type="number" class="form-control" id="value2" name="value2" placeholder="8000000" aria-describedby="inputGroupPrepend2" onchange="calculate()"  required>
-			      </div>
-			    </div>
-
-			    <div class="form-group">
-			    	<strong>
-			      <label for="validationDefaultUsername">Berapa nilai hutang yang harus dilunasi segera jika terjadi resiko pada Anda (dalam juta Rupiah) ?</label>
-			      </strong>
-			      <div class="input-group">
-			        <div class="input-group-prepend">
-			          <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
-			        </div>
-			        <input type="number" class="form-control" id="value3" name="value3" placeholder="10000000" aria-describedby="inputGroupPrepend2" onchange="calculate()" required>
-			      </div>
-			    </div>
-
-			    <div class="form-group">
-			      <div class="input-group">
-			        <input type="hidden" class="form-control" id="total" name="total" placeholder="Total" aria-describedby="inputGroupPrepend2" required>
-			      </div>
-			    </div>
-
-			  <div class="form-group">
-			    <div class="form-check">
-			      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-			      <label class="form-check-label" for="invalidCheck2" >
-			        Agree to send above data
-			      </label>
-			    </div>
-			  </div>
-			  <button class="btn btn-danger btn-sm btn-block" type="submit" >Submit</button>
-			  <button class="btn btn-secondary btn-sm btn-block" type="" onclick="document.location.href='<?php echo base_url();?>'" >Cancel</button>
-			</form>
-		</div>
-           </div>
-            
+         </tbody>
+</table>
+<input type="text" id='total' name="total" value="">
+<div align="right">
+        <button class="btn btn-danger btn-sm" type="submit" >Submit</button>
+        <button class="btn btn-secondary btn-sm" type="" onclick="document.location.href='<?php echo base_url();?>'" >Cancel</button>
         </div>
-    </div>
+</form>
+</div>
+</div>
+</div>
   </section>
+  <br><br><br><br><br><br><br><br><br><br>
 
 
   <!--==========================
@@ -271,15 +255,19 @@
   <script type="text/javascript">
 
   	function calculate(){
-  		var val1 = parseInt(document.getElementById("value1").value);
-  		var val2 = parseInt(document.getElementById("value2").value);
-  		var val3 = parseInt(document.getElementById("value3").value);
+  		var val1 = parseInt(document.getElementById("variabel1").value);
+  		var val2 = parseInt(document.getElementById("variabel2").value);
+  		var val3 = parseInt(document.getElementById("variabel3").value);
+      var val4 = parseInt(document.getElementById("variabel4").value);
 
-  		var cal1 = val1+val3;
-  		var cal2 = val2/0.005;
-  		var total = cal2-cal1;
+  		var total = val1+val2+val3+val4;
 
   		var result = document.getElementById('total').value=total;
+
+      console.log(document.getElementById('variabel1').value);
+      console.log(document.getElementById('variabel2').value);
+      console.log(document.getElementById('variabel3').value);
+      console.log(document.getElementById('variabel4').value); 
 
   	}
   </script>

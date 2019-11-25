@@ -85,7 +85,7 @@
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">Layanan</a></li>
           <li><a href="#services">Simulasi</a></li>
-          <li><a href="#artikel">Artikel</a></li>
+          <li><a href="#call-to-action">Artikel</a></li>
           <li><a href="#testimonials">Testimoni</a></li>
           <!-- <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
@@ -284,7 +284,7 @@
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
             <h4 class="title"><a href="">Finance Health Check</a></h4>
             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            <p class=""><a href="#" class="btn btn-danger" style="color: #fff; font-size: 12px; margin-left: 60px; margin-top: 15px;">Hitung Simulasi </a></p>
+            <p class=""><a href="<?php echo base_url();?>financial_healthcheck" class="btn btn-danger" style="color: #fff; font-size: 12px; margin-left: 60px; margin-top: 15px;">Hitung Simulasi </a></p>
           </div>
 
           <div class="col-md-5 box wow bounceInUp container" data-wow-duration="1.4s">
