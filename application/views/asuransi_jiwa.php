@@ -94,13 +94,12 @@
         <div class="col-sm-12" style="background: url('assets/img/home/Header Background RED.svg'); background-repeat: no-repeat; background-size: cover; height:100vh">
             <div class="row" style="padding-top:0px">
             	<div class="col-sm-9 d-none d-sm-block" style="padding-left:30vw;padding-top:5vw; z-index: 0;">
-            		<div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div>
-            	<form id="simulasi-jiwa-form" method="post" action="<?php echo base_url()?>asuransi_jiwa/insert" role="form">
+            	<form id="simulasi-jiwa-form" method="get" action="<?php echo base_url()?>asuransi_jiwa_result/get" role="form">
 			    <div class="form-group">
 			    	<strong>
 				    <label for="exampleInputEmail1">Alamat Email</label>
 				    </strong>
-				    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+				    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
 				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 				  	</div>
 

@@ -7,24 +7,24 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
 
-  <link href="assets/img/home/logobaru.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<?php echo base_url('assets/img/home/logobaru.png');?>" rel="icon">
+  <link href="<?php echo base_url('assets/img/apple-touch-icon.png" rel="apple-touch-icon');?>">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/lib/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/lib/font-awesome/css/font-awesome.min.css');?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/lib/animate/animate.min.css');?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/lib/ionicons/css/ionicons.min.css');?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/lib/owlcarousel/assets/owl.carousel.min.css');?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/lib/lightbox/css/lightbox.min.css');?>" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/css/style.css');?>" rel="stylesheet">
 
   <style>
     .responsive-card-simulasi {
@@ -91,105 +91,16 @@
 
   <section id="testimonials">
     <div class="intro-container">
-      <div class="col-sm-12" style="background: url('assets/img/home/Header Background RED.svg'); background-repeat: no-repeat; background-size: cover; height:100vh">
-        <div class="row" style="padding-top:0px">
-            <div class="col-sm-12 d-none d-sm-block" style="padding-left:5vw;padding-top:5vw; z-index: 0;">
-              <div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div>
-    <form id="simulasi-jiwa-form" method="post" action="<?php echo base_url()?>financial_healthcheck/insert" role="form">
-    <table class="table table-responsive table-striped table-bordered table-hover" style="font-size: 10px;">
-     <thead>
-         <tr>
-            <th style="width: 5%; text-align: center">No</th>
-            <th style="width: 35%; text-align: center">Pertanyaan</th>
-            <th style="width: 15%; text-align: center">Variabel 1</th>
-            <th style="width: 15%; text-align: center">Variabel 2</th>
-            <th style="width: 15%; text-align: center">Variabel 3</th>
-            <th style="width: 15%; text-align: center">Variabel 4</th>
-         </tr>
-     </thead>
-     <tbody>
-
-      <!-- get data using model -->
-      <?php $i=1; $no=1;
-        foreach ($data as $row) { ?>
-     
-         <tr>
-          <td align="center"><?php echo $no?> </td>
-          <td >
-            <label><?php echo $row->question ?></label>    
-          </td>
-          <td>
-            <label><input onclick="calculate()" type="radio" id='v1' name="value_<?php echo $i?>" value="<?php echo $row->value_1 ?>"><?php echo $row->variable_1 ?></label>
-          </td>
-          <td>
-            <label><input onclick="calculate()" type="radio" id='v2' name="value_<?php echo $i?>" value="<?php echo $row->value_2 ?>"><?php echo $row->variable_2 ?></label>
-          </td>
-          <td>
-            <label><input onclick="calculate()" type="radio" id='v3' name="value_<?php echo $i?>" value="<?php echo $row->value_3 ?>"><?php echo $row->variable_3 ?></label>
-          </td>
-          <td>
-              <label><input onclick="calculate()" type="radio" id='v4' name="value_<?php echo $i?>" value="<?php echo $row->value_4 ?>"><?php echo $row->variable_4 ?></label>
-          </td>
-         </tr>
-
-         <?php $i++; $no++;
-            } 
-          ?>
-
-          <!-- data manually -->
-
-          <!-- <tr>
-          <td align="center">1</td>
-          <td >
-            <label>Berapakah yang secara rutin dan kontinyu setiap bulan dapat Anda sisakan dari pendapatan keluarga, yang dialokasikan untuk tabungan, investasi atau membeli hal lain ?</label>    
-          </td>
-          <td>
-            <label><input onclick="calculate()" type="radio" id='v1' name="row1" value="5">Defisit</label>
-          </td>
-          <td>
-            <label><input onclick="calculate()" type="radio" id='v2' name="row1" value="3"><0-10%></label>
-          </td>
-          <td>
-            <label><input onclick="calculate()" type="radio" id='v3' name="row1" value="2">10-25%</label>
-          </td>
-          <td>
-              <label><input onclick="calculate()" type="radio" id='v4' name="row1" value="0">>25%</label>
-          </td>
-         </tr>
-
-         <tr>
-          <td align="center">1</td>
-          <td >
-            <label>Berapakah yang secara rutin dan kontinyu setiap bulan dapat Anda sisakan dari pendapatan keluarga, yang dialokasikan untuk tabungan, investasi atau membeli hal lain ?</label>    
-          </td>
-          <td>
-            <label><input onclick="calculate()" type="radio" id='v1' name="row2" value="0">Defisit</label>
-          </td>
-          <td>
-            <label><input onclick="calculate()" type="radio" id='v2' name="row2" value="1"><0-10%></label>
-          </td>
-          <td>
-            <label><input onclick="calculate()" type="radio" id='v3' name="row2" value="2">10-25%</label>
-          </td>
-          <td>
-              <label><input onclick="calculate()" type="radio" id='v4' name="row2" value="3">>25%</label>
-          </td>
-         </tr> -->
-
-         </tbody>
-</table>
-<input type="text" id='total' name="total" value="">
-
-</form>
-<div align="right">
-        <button class="btn btn-danger btn-sm" type="submit" >Submit</button>
-        <button class="btn btn-secondary btn-sm" type="" onclick="document.location.href='<?php echo base_url();?>'" >Cancel</button>
+        <div class="col-sm-12" style="background: url('<?php echo base_url('assets/img/home/Header Background RED.svg');?>'); background-repeat: no-repeat; background-size: cover; height:100vh">
+            <div class="row" style="padding-top:0px">
+              <div class="col-sm-9 d-none d-sm-block" style="padding-left:30vw;padding-top:5vw; z-index: 0;">
+                <h1 align="center" style="color: #e23e57; padding-top: 100px" ><strong>Data Berhasil Terkirim, Silahkan Cek Email Anda</strong></h1>
+    </div>
+           </div>
+            
         </div>
-</div>
-</div>
-</div>
+    </div>
   </section>
-  <br><br><br><br><br><br><br><br><br><br>
 
 
   <!--==========================
@@ -201,7 +112,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-3 footer-info">
-            <h5 ><img src="assets/img/home/logobaru.jpg" style=" height: 50px;"> <a href="#intro" style="color: #CC0000;"><strong>Klinik Keuangan</strong></a></h5>
+            <h5 ><img src="<?php echo base_url('assets/img/home/logobaru.jpg');?>" style=" height: 50px;"> <a href="#intro" style="color: #CC0000;"><strong>Klinik Keuangan</strong></a></h5>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
           </div>
 
@@ -293,62 +204,6 @@
 
   <!-- Template Main Javascript File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Calculation to get total -->
-  <script type="text/javascript">
-
-  	function calculate(){
-  		// var row1 = document.getElementsByName('row1');
-    //   var row2 = document.getElementsByName('row2');
-    var jumlah, total, number;
-
-      for(var numbrow=1; numbrow<13; numbrow++ ){
-        var rows = document.getElementsByName('value_'+[numbrow]);
-        console.log("rows : "+rows);
-        
-          for (var i=0; i<rows.length; i++) {
-           if (rows[i].checked) {
-            // do whatever you want with the checked radio
-            number = parseInt(rows[i].value);
-
-
-            console.log(number);
-            console.log("rows-length : "+rows.length);
-            
-
-            // only one radio can be logically checked, don't check the rest
-            break;
-
-
-           }
-          
-
-          }
-
-
-        
-    }
-    document.getElementById("total").value = number;
-
-
-
-      // for (var i=0; i<row2.length; i++) {
-      //  if (row2[i].checked)
-      //  {
-      //   // do whatever you want with the checked radio
-      //   console.log(row2[i].value);
-        
-      //   console.log(row2.length);
-
-      //   // only one radio can be logically checked, don't check the rest
-      //   break;
-      //  }
-      // }
-
-      
-  	}
-    
-  </script>
 
 </body>
 </html>
