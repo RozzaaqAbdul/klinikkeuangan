@@ -105,7 +105,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="pensiun_now" name="pensiun_now" value="<?php echo $pensiun_now ?>" readonly>
+                        <input type="text" class="form-control" id="pensiun_now" name="pensiun_now" value="<?php echo number_format($pensiun_now) ?>" readonly>
                     </div>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="pensiun_per_bulan" name="pensiun_per_bulan" value="<?php echo $pensiun_per_bulan ?>" readonly>
+                        <input type="text" class="form-control" id="pensiun_per_bulan" name="pensiun_per_bulan" value="<?php echo number_format($pensiun_per_bulan) ?>" readonly>
                     </div>
 			    </div>
 
@@ -129,7 +129,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="pensiun_per_tahun" name="pensiun_per_tahun" value="<?php echo $pensiun_per_tahun ?>" readonly>
+                        <input type="text" class="form-control" id="pensiun_per_tahun" name="pensiun_per_tahun" value="<?php echo number_format($pensiun_per_tahun) ?>" readonly>
 			        </div>
                 </div>
                 
@@ -141,7 +141,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="kebutuhan_pensiun" name="kebutuhan_pensiun" value="<?php echo $kebutuhan_pensiun ?>" readonly>
+                        <input type="text" class="form-control" id="kebutuhan_pensiun" name="kebutuhan_pensiun" value="<?php echo number_format($kebutuhan_pensiun) ?>" readonly>
 			        </div>
                 </div>
                 
@@ -153,7 +153,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="investasi_tinggi" name="investasi_tinggi" value="<?php echo $investasi_tinggi ?>" readonly>
+                        <input type="text" class="form-control" id="investasi_tinggi" name="investasi_tinggi" value="<?php echo number_format($investasi_tinggi) ?>" readonly>
 			        </div>
                 </div>
                 
@@ -165,7 +165,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="investasi_sedang" name="investasi_sedang" value="<?php echo $investasi_sedang ?>" readonly>
+                        <input type="text" class="form-control" id="investasi_sedang" name="investasi_sedang" value="<?php echo number_format($investasi_sedang) ?>" readonly>
 			        </div>
                 </div>
                 
@@ -177,7 +177,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="investasi_rendah" name="investasi_rendah" value="<?php echo $investasi_rendah ?>" readonly>
+                        <input type="text" class="form-control" id="investasi_rendah" name="investasi_rendah" value="<?php echo number_format($investasi_rendah) ?>" readonly>
 			        </div>
 			    </div>
 

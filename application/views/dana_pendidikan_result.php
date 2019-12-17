@@ -114,7 +114,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="value3" name="value3" value="<?php echo $value3 ?>" readonly>
+                        <input type="text" class="form-control" id="value3" name="value3" value="<?php echo number_format($value3) ?>" readonly>
                     </div>
                 </div>
                 
@@ -126,7 +126,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="dana_dibutuhkan" name="dana_dibutuhkan" value="<?php echo $dana_dibutuhkan ?>" readonly>
+                        <input type="text" class="form-control" id="dana_dibutuhkan" name="dana_dibutuhkan" value="<?php echo number_format($dana_dibutuhkan) ?>" readonly>
                     </div>
 			    </div>
 
@@ -138,7 +138,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="kategori_rendah" name="kategori_rendah" value="<?php echo $kategori_rendah ?>" readonly>
+                        <input type="text" class="form-control" id="kategori_rendah" name="kategori_rendah" value="<?php echo number_format($kategori_rendah) ?>" readonly>
 			        </div>
                 </div>
                 
@@ -150,7 +150,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="kategori_sedang" name="kategori_sedang" value="<?php echo $kategori_sedang ?>" readonly>
+                        <input type="text" class="form-control" id="kategori_sedang" name="kategori_sedang" value="<?php echo number_format($kategori_sedang) ?>" readonly>
 			        </div>
                 </div>
                 
@@ -162,7 +162,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
                         </div>
-                        <input type="number" class="form-control" id="kategori_tinggi" name="kategori_tinggi" value="<?php echo $kategori_tinggi ?>" readonly>
+                        <input type="text" class="form-control" id="kategori_tinggi" name="kategori_tinggi" value="<?php echo number_format($kategori_tinggi) ?>" readonly>
 			        </div>
 			    </div>
 
