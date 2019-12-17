@@ -291,14 +291,14 @@
             <div class="icon"><i class="ion-ios-paper-outline"></i></div>
             <h4 class="title"><a href="">Perencanaan Dana Pendidikan</a></h4>
             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            <p class=""><a href="#" class="btn btn-danger" style="color: #fff; font-size: 12px; margin-left: 60px; margin-top: 15px;">Hitung Simulasi </a></p>
+            <p class=""><a href="<?php echo base_url();?>dana_pendidikan" class="btn btn-danger" style="color: #fff; font-size: 12px; margin-left: 60px; margin-top: 15px;">Hitung Simulasi </a></p>
           </div>
 
           <div class="col-md-5 box wow bounceInUp container" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
             <h4 class="title"><a href="">Perencanaan Dana Pensiun</a></h4>
             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <p class=""><a href="#" class="btn btn-danger" style="color: #fff; font-size: 12px; margin-left: 60px; margin-top: 15px;">Hitung Simulasi </a></p>
+            <p class=""><a href="<?php echo base_url();?>dana_pensiun" class="btn btn-danger" style="color: #fff; font-size: 12px; margin-left: 60px; margin-top: 15px;">Hitung Simulasi </a></p>
           </div>
 
           <!-- <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">

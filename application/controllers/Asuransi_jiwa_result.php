@@ -11,7 +11,6 @@ class asuransi_jiwa_result extends CI_Controller {
 	
 	public function index()
 	{
-		
 		$this->load->view('asuransi_jiwa_result');
 	}
 
