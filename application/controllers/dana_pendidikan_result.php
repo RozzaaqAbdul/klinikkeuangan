@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class dana_pendidikan_result extends CI_Controller {
+class Dana_pendidikan_result extends CI_Controller {
 	public function __construct(){
         parent::__construct();
         //$this->load->library('pdf_report');

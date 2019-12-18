@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class dana_pensiun_result extends CI_Controller {
+class Dana_pensiun_result extends CI_Controller {
 	public function __construct(){
         parent::__construct();
         //$this->load->library('pdf_report');
@@ -73,13 +73,13 @@ class dana_pensiun_result extends CI_Controller {
         
 
         $data = array(
-            'pensiun_now'   => $pensiun_now,
-            'pensiun_per_bulan'   => $pensiun_per_bulan,
-            'pensiun_per_tahun'   => $pensiun_per_tahun,
-            'kebutuhan_pensiun'   => $kebutuhan_pensiun,
-            'investasi_tinggi'   => $investasi_tinggi,
-            'investasi_sedang'   => $investasi_sedang,
-            'investasi_rendah'   => $investasi_rendah
+            'pensiun_now'       => $pensiun_now,
+            'pensiun_per_bulan' => $pensiun_per_bulan,
+            'pensiun_per_tahun' => $pensiun_per_tahun,
+            'kebutuhan_pensiun' => $kebutuhan_pensiun,
+            'investasi_tinggi'  => $investasi_tinggi,
+            'investasi_sedang'  => $investasi_sedang,
+            'investasi_rendah'  => $investasi_rendah
         );
 
         $this->load->view('dana_pensiun_result', $data);

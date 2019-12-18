@@ -37,7 +37,6 @@ class asuransi_jiwa_result extends CI_Controller {
     $this->model_asuransijiwa->inputDataAsuransi($data,'asuransi_jiwa');
 
     $data_asuransi = $isi['data_asuransi'] ;
-    //$this->load->view('asuransi_jiwa_result', $data);
 
     $bulan = array (
     1 =>   'Januari',
@@ -56,10 +55,6 @@ class asuransi_jiwa_result extends CI_Controller {
 
 // create new PDF document
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
-
-//$img = file_get_contents('http://localhost/jtikv2/assets/images/form_f1.jpg');
-
-//$pdf->Image('@' . $img, 55, 19, '', '', 'JPG', '', 'T', false, 300, '', false, false, 0, false, false, false);
 
 // set document information
 $pdf->SetCreator(PDF_CREATOR);
@@ -174,12 +169,6 @@ $table .= ' <tr>
 
 $table .='</table>';
 
-//$dateLog = date_create($row->tgl_bimbingan);
-// $bulanLog = $bulan[(int)date("m")];
-// $tanggalLog = date("d");
-// $tahunLog = date("Y");
-// $dateNow = $tanggalLog . ' ' . $bulanLog . ' ' . $tahunLog; 
-
 $mydate=getdate(date("U"));
 //echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
 $dateNow = $mydate[mday] . ' ' . $mydate[month] . ' ' . $mydate[year]; 
@@ -262,13 +251,6 @@ $pdf->Output(FCPATH  . '/assets/file/'.$data_asuransi[0]->email.'/asuransi_jiwa.
 
   }
 
-  // public function setemail() {
-  // $email=$this->input->post('email');
-  // $subject="Klinik Keuangan - Perencanaan Proteksi dan Asuransi Jiwa";
-  // $message="See the detail about Klinik Keuangan in attach file";
-  // $this->send_to_mail($email,$subject,$message);
-  // }
-
   public function send_to_mail() {
     $email    = $this->input->post('email');
     $subject  ="Klinik Keuangan - Perencanaan Proteksi dan Asuransi Jiwa";
@@ -276,13 +258,11 @@ $pdf->Output(FCPATH  . '/assets/file/'.$data_asuransi[0]->email.'/asuransi_jiwa.
 
     $config = Array(
       'protocol' => 'smtp',
-      //'smtp_host' => 'ssl://smtp.googlemail.com',
       'smtp_host' => 'smtp.gmail.com',
       'smtp_port' => 465,
       'smtp_user' => 'abiyosoa@gmail.com', 
       'smtp_pass' => 'zeotzoio23', 
       'mailtype' => 'html',
-      //'charset' => 'iso-8859-1',
       'charset' => 'utf-8',
       'smtp_crypto' => 'ssl',
       'wordwrap' => TRUE

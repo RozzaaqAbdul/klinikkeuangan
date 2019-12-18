@@ -33,8 +33,6 @@ class Asuransi_jiwa extends CI_Controller {
      'total'   => $total
    );
 
-    // $this->model_asuransijiwa->inputDataAsuransi($data,'asuransi_jiwa_result');
-
     $this->session->set_flashdata('msg', 
       '
       <div class="alert alert-info alert-dismissable">
