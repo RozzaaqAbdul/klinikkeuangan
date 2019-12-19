@@ -91,7 +91,7 @@
 
 	    <section id="testimonials">
 	      <div class="intro-container">
-	        <div class="col-sm-12" style="background: url('<?php echo base_url('assets/img/home/Header Background RED.svg');?>'); background-repeat: no-repeat; background-size: cover; padding-bottom: 65vw; height:100vh">
+	        <div class="col-sm-12" style="background: url('<?php echo base_url('assets/img/home/Header Background RED.svg');?>'); background-repeat: no-repeat; background-size: cover; padding-bottom: 70vw; height:100vh">
 	          <div class="row" style="padding-top:0px">
 	            <div class="col-sm-12 d-none d-sm-block" style="padding-left:5vw; z-index: 0;">
 	              <div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div>
