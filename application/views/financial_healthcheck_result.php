@@ -91,7 +91,7 @@
 
 	    <section id="testimonials">
 	      <div class="intro-container">
-	        <div class="col-sm-12" style="background: url('<?php echo base_url('assets/img/home/Header Background RED.svg');?>'); background-repeat: no-repeat; background-size: cover; height:100vh">
+	        <div class="col-sm-12" style="background: url('<?php echo base_url('assets/img/home/Header Background RED.svg');?>'); background-repeat: no-repeat; background-size: cover; padding-bottom: 65vw; height:100vh">
 	          <div class="row" style="padding-top:0px">
 	            <div class="col-sm-12 d-none d-sm-block" style="padding-left:5vw; z-index: 0;">
 	              <div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div>
@@ -116,16 +116,18 @@
 	                   <tr>
 	                    <td align="center">1</td>
 	                    <td >
-	                      <label>pertanyaan1</label>    
+	                      <label><?php echo $question1?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_1?></label>
 	                    </td>
 	                  </tr>
+	                  
+
 	                  <tr>
 	                    <td align="center">2</td>
 	                    <td >
-	                      <label>pertanyaan2</label>    
+	                      <label><?php echo $question2?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_2?></label>
@@ -134,7 +136,7 @@
 	                  <tr>
 	                    <td align="center">3</td>
 	                    <td >
-	                      <label>pertanyaan3</label>    
+	                      <label><?php echo $question3?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_3?></label>
@@ -143,7 +145,7 @@
 	                  <tr>
 	                    <td align="center">4</td>
 	                    <td >
-	                      <label>pertanyaan4</label>    
+	                      <label><?php echo $question4?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_4?></label>
@@ -152,7 +154,7 @@
 	                  <tr>
 	                    <td align="center">5</td>
 	                    <td >
-	                      <label>pertanyaan5</label>    
+	                      <label><?php echo $question5?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_5?></label>
@@ -161,7 +163,7 @@
 	                  <tr>
 	                    <td align="center">6</td>
 	                    <td >
-	                      <label>pertanyaan6</label>    
+	                      <label><?php echo $question6?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_6?></label>
@@ -170,7 +172,7 @@
 	                  <tr>
 	                    <td align="center">7</td>
 	                    <td >
-	                      <label>pertanyaan7</label>    
+	                      <label><?php echo $question7?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_7?></label>
@@ -179,7 +181,7 @@
 	                  <tr>
 	                    <td align="center">8</td>
 	                    <td >
-	                      <label>pertanyaan8</label>    
+	                      <label><?php echo $question8?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_8?></label>
@@ -188,7 +190,7 @@
 	                  <tr>
 	                    <td align="center">9</td>
 	                    <td >
-	                      <label>pertanyaan9</label>    
+	                      <label><?php echo $question9?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_9?></label>
@@ -197,7 +199,7 @@
 	                  <tr>
 	                    <td align="center">10</td>
 	                    <td >
-	                      <label>pertanyaan10</label>    
+	                      <label><?php echo $question10?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_10?></label>
@@ -206,7 +208,7 @@
 	                  <tr>
 	                    <td align="center">11</td>
 	                    <td >
-	                      <label>pertanyaan11</label>    
+	                      <label><?php echo $question11?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_11?></label>
@@ -215,7 +217,7 @@
 	                  <tr>
 	                    <td align="center">12</td>
 	                    <td >
-	                      <label>pertanyaan12</label>    
+	                      <label><?php echo $question12?></label>    
 	                    </td>
 	                    <td>
 	                      <label><?php echo $value_12?></label>
@@ -252,8 +254,6 @@
 	</div>
 	</div>
 	</section>
-	<br><br><br><br><br><br><br><br><br><br>
-
 
 	  <!--==========================
 	    Footer

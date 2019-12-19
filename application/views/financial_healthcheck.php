@@ -91,7 +91,7 @@
 
     <section id="testimonials">
       <div class="intro-container">
-        <div class="col-sm-12" style="background: url('assets/img/home/Header Background RED.svg'); background-repeat: no-repeat; background-size: cover; height:100vh">
+        <div class="col-sm-12" style="background: url('assets/img/home/Header Background RED.svg'); background-repeat: no-repeat; background-size: cover; height:100vh; padding-bottom: 85vw">
           <div class="row" style="padding-top:0px">
             <div class="col-sm-12 d-none d-sm-block" style="padding-left:5vw;padding-top:5vw; z-index: 0;">
               
@@ -156,8 +156,6 @@
 </div>
 </div>
 </section>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 
   <!--==========================
     Footer
