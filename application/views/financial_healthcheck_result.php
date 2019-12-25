@@ -96,17 +96,18 @@
 	            <div class="col-sm-12 d-none d-sm-block" style="padding-left:5vw; z-index: 0;">
 	              <div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div>
 	              	<div class="col-sm-6 d-none d-sm-block" style="padding-top:5vw; padding-bottom:2vw; z-index: 0;">
+	              		<form id="generate_to_pdf" method="post" action="<?php echo base_url()?>financial_healthcheck_result/send_to_mail" role="form">
 	                  <strong>
-	                    <label for="exampleInputEmail1" hidden="">Alamat Email</label>
+	                    <label for="exampleInputEmail1">Alamat Email</label>
 	                  </strong>
-	                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" value="<?php echo $email?>" required hidden>
+	                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" value="<?php echo $email?>" readonly>
 	                </div>
 	                <table class="table table-responsive table-striped table-bordered table-hover" style="font-size: 10px;">
 	                 <thead>
 	                   <tr>
 	                    <th style="width: 5%; text-align: center">No</th>
 	                    <th style="width: 95%; text-align: center">Pertanyaan</th>
-	                    <th style="width: 10%; text-align: center">Value</th>
+	                    <th style="width: 10%; text-align: center">Score</th>
 	                  </tr>
 	                </thead>
 	                <tbody>
@@ -229,7 +230,7 @@
 	    <!-- <input type="text" id='total' name="total" value=""> -->
 	    <div class="col-sm-12 d-none d-sm-block"">
 	        <strong>
-	        <label>Score : </label>
+	        <label>Total Score : </label>
 	        </strong>
 	        <label><?php echo $score?></label>
 	        <br>
@@ -240,7 +241,7 @@
 	    </div>
 	    
 	  <div align="right" class="row">
-	  <form id="generate_to_pdf" method="post" action="<?php echo base_url()?>financial_healthcheck_result/send_to_mail" role="form">
+	  
 	      <button class="btn btn-primary btn-sm" type="submit" style="margin-left: 69vw">Send to email</button>
 	  </form>
 

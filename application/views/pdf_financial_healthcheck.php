@@ -129,7 +129,7 @@ $table .= '
         <tr>
             <th style="width: 5%; text-align: center"><b>No</b></th>
             <th style="width: 85%; text-align: center"><b>Pertanyaan</b></th>
-            <th style="width: 10%; text-align: center"><b>Value</b></th>
+            <th style="width: 10%; text-align: center"><b>Score</b></th>
         </tr>
     </thead>';
 
@@ -255,7 +255,7 @@ $table .='
 <br><br>
 <div>
             <strong>
-            <label>Score : </label>
+            <label>Total Score : </label>
             </strong>
             <label>'.$score.'</label>
             <br>
@@ -313,7 +313,7 @@ $pdf->lastPage();
 //Close and output PDF document
 // Fungsi ob_clean untuk menghapus output buffer
 ob_clean();
-$pdf->Output('financial_healthcheck.pdf', 'I');
+$pdf->Output('financial_healthcheck.pdf', 'D');
 
 //============================================================+
 // END OF FILE

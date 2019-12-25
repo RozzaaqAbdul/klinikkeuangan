@@ -21,9 +21,8 @@ class asuransi_jiwa_result extends CI_Controller {
     $value3     = $this->input->post_get('value3');
 
     //calculation
-    $cal1 = $value1+$value3;
-    $cal2 = $value2/0.005;
-    $total = $value2-$cal2;
+    $cal = $value2/0.005;
+    $total = $vcal-$value1+$value3;
 
     $data = array(
      'email'  => $email,
