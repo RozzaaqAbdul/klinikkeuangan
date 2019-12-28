@@ -37,6 +37,7 @@ class Financial_healthcheck_result extends CI_Controller {
 
         //get data question from table 'financial_health'
 	    $query  = $this->model_financial_healthcheck->queryDataFinancial();
+        $query2  = $this->model_financial_healthcheck->queryDataFinancialResult();
         $question1 = $query[0]->question;
         $question2 = $query[1]->question;
         $question3 = $query[2]->question;
@@ -126,82 +127,7 @@ class Financial_healthcheck_result extends CI_Controller {
         );
         $this->model_financial_healthcheck->inputDataFinancialHealthCheck($insert,'financial_health_result');
 
-        //load page view
-        $this->load->view('financial_healthcheck_result', $data);
-
-	}
-
-    public function generate_to_pdf() {
-    // $get_email    = $this->input->post_get('email');
-    // $score    = $this->input->post_get('score');
-
-    //$isi['data']  = $this->model_financial_healthcheck->queryDataFinancialResult();
-    //$isi['data2']  = $this->model_financial_healthcheck->queryDataFinancial();
-    
-    //get data question from table 'financial_health'
-    $query  = $this->model_financial_healthcheck->queryDataFinancial();
-    $question1 = $query[0]->question;
-    $question2 = $query[1]->question;
-    $question3 = $query[2]->question;
-    $question4 = $query[3]->question;
-    $question5 = $query[4]->question;
-    $question6 = $query[5]->question;
-    $question7 = $query[6]->question;
-    $question8 = $query[7]->question;
-    $question9 = $query[8]->question;
-    $question10 = $query[9]->question;
-    $question11 = $query[10]->question;
-    $question12 = $query[11]->question;
-
-    //get data question from table 'financial_health_result'
-    $query2  = $this->model_financial_healthcheck->queryDataFinancialResult();
-    $value_1 = $query2[0]->value_1;
-    $value_2 = $query2[0]->value_2;
-    $value_3 = $query2[0]->value_3;
-    $value_4 = $query2[0]->value_4;
-    $value_5 = $query2[0]->value_5;
-    $value_6 = $query2[0]->value_6;
-    $value_7 = $query2[0]->value_7;
-    $value_8 = $query2[0]->value_8;
-    $value_9 = $query2[0]->value_9;
-    $value_10 = $query2[0]->value_10;
-    $value_11 = $query2[0]->value_11;
-    $value_12 = $query2[0]->value_12;
-    $email    = $query2[0]->email;
-    $score    = $query2[0]->score;
-    $score_result = $query2[0]->score_result;
-    
-    $isi = array(
-            'question1' => $question1,
-            'question2' => $question2,
-            'question3' => $question3,
-            'question4' => $question4,
-            'question5' => $question5,
-            'question6' => $question6,
-            'question7' => $question7,
-            'question8' => $question8,
-            'question9' => $question9,
-            'question10' => $question10,
-            'question11' => $question11,
-            'question12' => $question12,
-            'email'     => $email,
-            'value_1'   => $value_1,
-            'value_2'   => $value_2,
-            'value_3'   => $value_3,
-            'value_4'   => $value_4,
-            'value_5'   => $value_5,
-            'value_6'   => $value_6,
-            'value_7'   => $value_7,
-            'value_8'   => $value_8,
-            'value_9'   => $value_9,
-            'value_10'   => $value_10,
-            'value_11'   => $value_11,
-            'value_12'   => $value_12,
-            'score'     => $score,
-            'score_result'  => $score_result,
-        );
-
-    //save pdf result to folder
+            //save pdf result to folder
 
 $bulan = array (
     1 =>   'Januari',
@@ -489,15 +415,90 @@ $pdf->lastPage();
 //Close and output PDF document
 // Fungsi ob_clean untuk menghapus output buffer
 ob_clean();
-if (!is_dir(FCPATH  . '/assets/file/'.$query2[0]->email)) {
-    mkdir(FCPATH  . '/assets/file/'.$query2[0]->email, 0777, TRUE);
+if (!is_dir(FCPATH  . '/assets/file/financial_health_check/'.$query2[0]->email)) {
+    mkdir(FCPATH  . '/assets/file/financial_health_check/'.$query2[0]->email, 0777, TRUE);
 
 }
-$pdf->Output(FCPATH  . '/assets/file/'.$query2[0]->email.'/financial_healthcheck.pdf', 'F');
+$pdf->Output(FCPATH  . '/assets/file/financial_health_check/'.$query2[0]->email.'/financial_healthcheck.pdf', 'F');
 
 //============================================================+
 // END OF FILE
 //============================================================+
+
+        //load page view
+        $this->load->view('financial_healthcheck_result', $data);
+
+	}
+
+    public function generate_to_pdf() {
+    // $get_email    = $this->input->post_get('email');
+    // $score    = $this->input->post_get('score');
+
+    //$isi['data']  = $this->model_financial_healthcheck->queryDataFinancialResult();
+    //$isi['data2']  = $this->model_financial_healthcheck->queryDataFinancial();
+    
+    //get data question from table 'financial_health'
+    $query  = $this->model_financial_healthcheck->queryDataFinancial();
+    $question1 = $query[0]->question;
+    $question2 = $query[1]->question;
+    $question3 = $query[2]->question;
+    $question4 = $query[3]->question;
+    $question5 = $query[4]->question;
+    $question6 = $query[5]->question;
+    $question7 = $query[6]->question;
+    $question8 = $query[7]->question;
+    $question9 = $query[8]->question;
+    $question10 = $query[9]->question;
+    $question11 = $query[10]->question;
+    $question12 = $query[11]->question;
+
+    //get data question from table 'financial_health_result'
+    $query2  = $this->model_financial_healthcheck->queryDataFinancialResult();
+    $value_1 = $query2[0]->value_1;
+    $value_2 = $query2[0]->value_2;
+    $value_3 = $query2[0]->value_3;
+    $value_4 = $query2[0]->value_4;
+    $value_5 = $query2[0]->value_5;
+    $value_6 = $query2[0]->value_6;
+    $value_7 = $query2[0]->value_7;
+    $value_8 = $query2[0]->value_8;
+    $value_9 = $query2[0]->value_9;
+    $value_10 = $query2[0]->value_10;
+    $value_11 = $query2[0]->value_11;
+    $value_12 = $query2[0]->value_12;
+    $email    = $query2[0]->email;
+    $score    = $query2[0]->score;
+    $score_result = $query2[0]->score_result;
+    
+    $isi = array(
+            'question1' => $question1,
+            'question2' => $question2,
+            'question3' => $question3,
+            'question4' => $question4,
+            'question5' => $question5,
+            'question6' => $question6,
+            'question7' => $question7,
+            'question8' => $question8,
+            'question9' => $question9,
+            'question10' => $question10,
+            'question11' => $question11,
+            'question12' => $question12,
+            'email'     => $email,
+            'value_1'   => $value_1,
+            'value_2'   => $value_2,
+            'value_3'   => $value_3,
+            'value_4'   => $value_4,
+            'value_5'   => $value_5,
+            'value_6'   => $value_6,
+            'value_7'   => $value_7,
+            'value_8'   => $value_8,
+            'value_9'   => $value_9,
+            'value_10'   => $value_10,
+            'value_11'   => $value_11,
+            'value_12'   => $value_12,
+            'score'     => $score,
+            'score_result'  => $score_result,
+        );
 
 
     $this->load->view('pdf_financial_healthcheck', $isi);
@@ -506,7 +507,7 @@ $pdf->Output(FCPATH  . '/assets/file/'.$query2[0]->email.'/financial_healthcheck
 
   public function send_to_mail() {
     $email    = $this->input->post('email');
-    $subject  ="Klinik Keuangan - Perencanaan Proteksi dan Asuransi Jiwa";
+    $subject  ="Klinik Keuangan - Finance Health Check";
     $message  ="See the detail about Klinik Keuangan in attach file";
 
     $config = Array(
@@ -528,7 +529,7 @@ $pdf->Output(FCPATH  . '/assets/file/'.$query2[0]->email.'/financial_healthcheck
           $this->email->to($email);
           $this->email->subject($subject);
           $this->email->message($message);
-          $this->email->attach('assets/file/'.$email.'/financial_healthcheck.pdf');
+          $this->email->attach('assets/file/financial_health_check/'.$email.'/financial_healthcheck.pdf');
           if($this->email->send())
          {
           $this->session->set_flashdata('msg', 

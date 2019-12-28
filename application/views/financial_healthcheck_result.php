@@ -93,14 +93,14 @@
 	      <div class="intro-container">
 	        <div class="col-sm-12" style="background: url('<?php echo base_url('assets/img/home/Header Background RED.svg');?>'); background-repeat: no-repeat; background-size: cover; padding-bottom: 70vw; height:100vh">
 	          <div class="row" style="padding-top:0px">
-	            <div class="col-sm-12 d-none d-sm-block" style="padding-left:5vw; z-index: 0;">
+	            <div class="col-sm-12 d-none d-sm-block" style="padding-left:5vw; padding-bottom:10vw;z-index: 0;">
 	              <div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div>
-	              	<div class="col-sm-6 d-none d-sm-block" style="padding-top:5vw; padding-bottom:2vw; z-index: 0;">
+	              	<div class="col-sm-6 d-none d-sm-block" style="padding-top:2vw; margin-bottom:200vw z-index: 0;">
 	              		<form id="generate_to_pdf" method="post" action="<?php echo base_url()?>financial_healthcheck_result/send_to_mail" role="form">
 	                  <strong>
-	                    <label for="exampleInputEmail1">Alamat Email</label>
+	                    <label for="exampleInputEmail1" hidden="">Alamat Email</label>
 	                  </strong>
-	                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" value="<?php echo $email?>" readonly>
+	                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" value="<?php echo $email?>" readonly hidden>
 	                </div>
 	                <table class="table table-responsive table-striped table-bordered table-hover" style="font-size: 10px;">
 	                 <thead>

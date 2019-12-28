@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 17, 2019 at 10:46 AM
--- Server version: 10.4.8-MariaDB
--- PHP Version: 7.3.11
+-- Host: localhost
+-- Generation Time: Dec 28, 2019 at 03:00 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -50,7 +50,7 @@ INSERT INTO `asuransi` (`id`, `question`, `variable`) VALUES
 --
 
 CREATE TABLE `asuransi_jiwa` (
-  `id` tinyint(10) NOT NULL,
+  `id` int(10) NOT NULL,
   `email` varchar(50) NOT NULL,
   `value1` int(20) NOT NULL,
   `value2` int(20) NOT NULL,
@@ -185,7 +185,123 @@ INSERT INTO `asuransi_jiwa` (`id`, `email`, `value1`, `value2`, `value3`, `total
 (120, 'abiyosoa3@gmail.com', 12, 12, 12, '-2388'),
 (121, 'abiyosoa3@gmail.com', 12, 12, 12, '-2388'),
 (122, 'abiyosoa3@gmail.com', 12, 12, 12, '-2388'),
-(123, 'abiyosoa3@gmail.com', 12, 12, 12, '-2388');
+(123, 'abiyosoa3@gmail.com', 12, 12, 12, '-2388'),
+(124, 'abiyosoa@gmail.com', 2, 123, 2, '-24477'),
+(125, 'abiyosoa@gmail.com', 1, 2, 2, '-398'),
+(126, 'panjirp@gmail.com', 2000000, 4000000, 6000000, '-796000000'),
+(127, 'abiyosoa@gmail.com', 1212, 121212, 12121212, '-24121188'),
+(128, 'abiyosoa@gmail.com', 2000000, 4000000, 1000000, '-796000000'),
+(129, 'abiyosoa@gmail.com', 19999999, 10000000, 18000000, '-1990000000'),
+(130, 'abiyosoa@gmail.com', 10000000, 2000000, 1000000, '-398000000'),
+(131, 'abiyosoa@gmail.com', 0, 5000000, 5000000, '5000000'),
+(132, 'abiyosoa@gmail.com', 1000000, 5000000, 10000000, '9000000'),
+(133, 'abiyosoa@gmail.com', 1000000, 5000000, 10000000, '9000000'),
+(134, 'abiyosoa2@gmail.com', 1000000, 4000000, 3000000, '2000000'),
+(135, 'abiyosoa2@gmail.com', 1000000, 4000000, 3000000, '2000000'),
+(136, 'abiyosoa2@gmail.com', 1000000, 4000000, 3000000, '2000000'),
+(137, 'abiyosoa2@gmail.com', 1000000, 4000000, 3000000, '2000000'),
+(138, 'abiyosoa2@gmail.com', 1000000, 4000000, 3000000, '2000000'),
+(139, 'abiyosoa@gmail.com', 12, 12, 12, '0'),
+(140, 'abiyosoa@gmail.com', 12, 12, 12, '0'),
+(141, 'abiyosoa@gmail.com', 123, 123, 123, '0'),
+(142, 'abiyosoa@gmail.com', 123, 2, 2, '-121'),
+(143, 'bayu.adityoramadhan@gmail.com', 3000000, 7000000, 10000000, '7000000'),
+(144, 'bayu.adityoramadhan@gmail.com', 123, 123, 123, '0'),
+(145, 'bayu.adityoramadhan@gmail.com', 4000000, 6000000, 10000000, '6000000'),
+(146, 'bayu.adityoramadhan@gmail.com', 3000000, 5000000, 10000000, '7000000');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dana_pendidikan_result`
+--
+
+CREATE TABLE `dana_pendidikan_result` (
+  `id` int(10) NOT NULL,
+  `email` text NOT NULL,
+  `sisa_waktu` text NOT NULL,
+  `value3` text NOT NULL,
+  `dana_dibutuhkan` text NOT NULL,
+  `kategori_rendah` text NOT NULL,
+  `kategori_sedang` text NOT NULL,
+  `kategori_tinggi` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `dana_pendidikan_result`
+--
+
+INSERT INTO `dana_pendidikan_result` (`id`, `email`, `sisa_waktu`, `value3`, `dana_dibutuhkan`, `kategori_rendah`, `kategori_sedang`, `kategori_tinggi`) VALUES
+(1, 'abiyosoa@gmail.com', '8', '10000000', '21435888.1', '160126353.93935', '134035209.10918', '111369141.82865'),
+(2, 'abiyosoa@gmail.com', '8', '10000000', '21435888.1', '160126353.93935', '134035209.10918', '111369141.82865'),
+(3, 'abiyosoa@gmail.com', '8', '10000000', '21435888.1', '160126353.93935', '134035209.10918', '111369141.82865'),
+(4, 'abiyosoa@gmail.com', '8', '10000000', '21435888.1', '160126353.93935', '134035209.10918', '111369141.82865'),
+(5, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(6, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(7, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(8, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(9, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(10, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(11, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(12, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(13, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(14, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(15, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(16, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(17, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(18, 'abiyosoa2@gmail.com', '9', '10000000', '23579476.91', '149777974.34813', '122241493.1651', '98843220.629368'),
+(19, 'abiyosoa@gmail.com2', '12', '10000000', '31384283.76721', '130491431.97278', '98364352.729157', '72965937.505434'),
+(20, 'abiyosoa@gmail.com2', '12', '10000000', '31384283.76721', '130491431.97278', '98364352.729157', '72965937.505434'),
+(21, 'abiyosoa@gmail.com2', '12', '10000000', '31384283.76721', '130491431.97278', '98364352.729157', '72965937.505434'),
+(22, 'abiyosoa2@gmail.com', '12', '10000000', '31384283.76721', '130491431.97278', '98364352.729157', '72965937.505434'),
+(23, 'abiyosoa2@gmail.com', '12', '10000000', '31384283.76721', '130491431.97278', '98364352.729157', '72965937.505434'),
+(24, 'abiyosoa2@gmail.com', '12', '10000000', '31384283.76721', '130491431.97278', '98364352.729157', '72965937.505434'),
+(25, 'abiyosoa2@gmail.com', '13', '10000000', '34522712.143931', '126493708.05188', '92750866.077691', '66756964.465723'),
+(26, 'abiyosoa@gmail.com', '15', '10000000', '41772481.694157', '120716380.69235', '83615167.094725', '56546325.852347'),
+(27, 'abiyosoa@gmail.com', '14', '10000000', '37974983.358324', '123286364.6349', '87885324.265043', '61334188.623235'),
+(28, 'bayu.adityoramadhan@gmail.com', '11', '10000000', '28531167.0611', '135488241.82683', '104934173.91731', '80167993.417681'),
+(29, 'bayu.adityoramadhan@gmail.com', '11', '10000000', '28531167.0611', '135488241.82683', '104934173.91731', '80167993.417681');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dana_pensiun_result`
+--
+
+CREATE TABLE `dana_pensiun_result` (
+  `id` int(10) NOT NULL,
+  `email` text NOT NULL,
+  `pensiun_now` text NOT NULL,
+  `pensiun_per_bulan` text NOT NULL,
+  `pensiun_per_tahun` text NOT NULL,
+  `kebutuhan_pensiun` text NOT NULL,
+  `investasi_tinggi` text NOT NULL,
+  `investasi_sedang` text NOT NULL,
+  `investasi_rendah` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `dana_pensiun_result`
+--
+
+INSERT INTO `dana_pensiun_result` (`id`, `email`, `pensiun_now`, `pensiun_per_bulan`, `pensiun_per_tahun`, `kebutuhan_pensiun`, `investasi_tinggi`, `investasi_sedang`, `investasi_rendah`) VALUES
+(5, 'abiyosoa@gmail.com', '4000000', '5610206.9228', '67322483.0736', '1156834446.16004', '12023474.8613443', '13421112.2125971', '14939026.149764'),
+(6, 'abiyosoa@gmail.com', '4000000', '5610206.9228', '67322483.0736', '1156834446.16004', '12023474.8613443', '13421112.2125971', '14939026.149764'),
+(7, 'abiyosoa@gmail.com', '4000000', '5610206.9228', '67322483.0736', '1156834446.16004', '12023474.8613443', '13421112.2125971', '14939026.149764'),
+(8, 'abiyosoa2@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(9, 'abiyosoa2@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(10, 'abiyosoa2@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(11, 'abiyosoa2@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(12, 'abiyosoa2@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(13, 'abiyosoa2@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(14, 'abiyosoa2@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(15, 'abiyosoa2@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(19, 'abiyosoa@gmail.com', '12000000', '91347060.5119444', '1096164726.1433', '18835923096.9224', '1334595.18419376', '3429095.69540533', '8332680.25469395'),
+(20, 'abiyosoa2@gmail.com', '20000000', '152245100.853241', '1826941210.2389', '31393205161.5374', '2224325.3069896', '5715159.49234222', '13887800.4244899'),
+(21, 'abiyosoa@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(22, 'abiyosoa2@gmail.com', '9000000', '48846893.761106', '586162725.13327', '10072314634.4422', '1755598.73220206', '3736262.32328836', '3736262.32328836'),
+(23, 'abiyosoa@gmail.com', '20000000', '152245100.853241', '1826941210.2389', '31393205161.5374', '2224325.3069896', '5715159.49234222', '13887800.4244899'),
+(24, 'bayu.adityoramadhan@gmail.com', '12000000', '91347060.5119444', '1096164726.1433', '18835923096.9224', '1334595.18419376', '3429095.69540533', '8332680.25469395');
 
 -- --------------------------------------------------------
 
@@ -251,6 +367,90 @@ INSERT INTO `financial_health` (`id`, `question`, `variable_1`, `variable_2`, `v
 (10, 'Setara berapa bulan gaji kotor per bulan Anda kah total nilai uang pertanggungan asuransi jiwa yang Anda miliki saat ini (term life, personal accident, unit link benefit, endowment, asuransi pendidikan) ?\r\n', '0-6 bulan\r\n', '6-12 bulan\r\n', '12-24 bulan\r\n', '> 24 bulan\r\n', '5\r\n', '4\r\n', '3\r\n', '0\r\n'),
 (11, 'Setara berapa bulan gaji kotor per bulan Anda kah total nilai saldo dana pensiun yang Anda miliki saat ini ?\r\n', '0-6 bulan\r\n', '6-12 bulan\r\n', '12-24 bulan\r\n', '> 24 bulan\r\n', '5\r\n', '3\r\n', '1\r\n', '0\r\n'),
 (12, 'Berapa banyak sumber pendapatan keluarga Anda saat ini ? (jika hanya berasal dari gaji maka jawabannya adalah 1, jika hanya dari gaji Anda dan pasangan maka jawabannya adalah 2, jika kedua pihak bekerja dan ada 2 jenis bisnis misalnya, maka jawabannya adalah 4, dan seterusnya)\r\n', '4 atau lebih\r\n', '3\r\n', '2\r\n', '1\r\n', '0\r\n', '1\r\n', '2\r\n', '5\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `financial_health_result`
+--
+
+CREATE TABLE `financial_health_result` (
+  `id` int(10) NOT NULL,
+  `email` text NOT NULL,
+  `score` int(2) NOT NULL,
+  `value_1` int(20) NOT NULL,
+  `value_2` int(20) NOT NULL,
+  `value_3` int(20) NOT NULL,
+  `value_4` int(20) NOT NULL,
+  `value_5` int(20) NOT NULL,
+  `value_6` int(20) NOT NULL,
+  `value_7` int(20) NOT NULL,
+  `value_8` int(20) NOT NULL,
+  `value_9` int(20) NOT NULL,
+  `value_10` int(20) NOT NULL,
+  `value_11` int(20) NOT NULL,
+  `value_12` int(20) NOT NULL,
+  `score_result` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `financial_health_result`
+--
+
+INSERT INTO `financial_health_result` (`id`, `email`, `score`, `value_1`, `value_2`, `value_3`, `value_4`, `value_5`, `value_6`, `value_7`, `value_8`, `value_9`, `value_10`, `value_11`, `value_12`, `score_result`) VALUES
+(6, 'abiyosoa@gmail.com', 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(7, 'abiyosoa@gmail.com', 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(8, 'abiyosoa@gmail.com', 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(9, 'abiyosoa@gmail.com', 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(10, 'abiyosoa@gmail.com', 27, 5, 2, 2, 1, 1, 4, 2, 0, 1, 4, 3, 2, ''),
+(11, 'abiyosoa@gmail.com', 27, 5, 2, 2, 1, 1, 4, 2, 0, 1, 4, 3, 2, ''),
+(12, 'abiyosoa@gmail.com', 27, 5, 2, 2, 1, 1, 4, 2, 0, 1, 4, 3, 2, ''),
+(13, 'abiyosoa@gmail.com', 27, 5, 2, 2, 1, 1, 4, 2, 0, 1, 4, 3, 2, ''),
+(14, 'abiyosoa@gmail.com', 27, 5, 2, 2, 1, 1, 4, 2, 0, 1, 4, 3, 2, ''),
+(15, 'abiyosoa@gmail.com', 27, 5, 2, 2, 1, 1, 4, 2, 0, 1, 4, 3, 2, ''),
+(16, 'abiyosoa@gmail.com', 27, 5, 2, 2, 1, 1, 4, 2, 0, 1, 4, 3, 2, ''),
+(17, 'abiyosoa@gmail.com', 27, 5, 2, 2, 1, 1, 4, 2, 0, 1, 4, 3, 2, ''),
+(18, 'abiyosoa@gmail.com', 27, 5, 2, 2, 1, 1, 4, 2, 0, 1, 4, 3, 2, ''),
+(19, 'abiyosoa3@gmail.com', 24, 5, 5, 2, 1, 0, 0, 2, 0, 1, 3, 0, 5, ''),
+(20, 'abiyosoa2@gmail.com', 28, 2, 2, 1, 1, 3, 3, 2, 3, 2, 3, 1, 5, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(21, 'abiyosoa2@gmail.com', 28, 2, 2, 1, 1, 3, 3, 2, 3, 2, 3, 1, 5, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(22, 'abiyosoa2@gmail.com', 28, 2, 2, 1, 1, 3, 3, 2, 3, 2, 3, 1, 5, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(23, 'abiyosoa2@gmail.com', 28, 2, 2, 1, 1, 3, 3, 2, 3, 2, 3, 1, 5, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(24, 'abiyosoa2@gmail.com', 28, 2, 2, 1, 1, 3, 3, 2, 3, 2, 3, 1, 5, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(25, 'abiyosoa2@gmail.com', 28, 2, 2, 1, 1, 3, 3, 2, 3, 2, 3, 1, 5, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(26, 'panjirp@gmail.com', 32, 0, 0, 0, 5, 5, 5, 5, 5, 5, 0, 0, 2, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(27, 'panjirp@gmail.com', 32, 0, 0, 0, 5, 5, 5, 5, 5, 5, 0, 0, 2, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(28, 'abiyosoa@gmail.com', 21, 5, 2, 2, 0, 1, 4, 2, 1, 2, 0, 0, 2, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(29, 'abiyosoa@gmail.com', 21, 5, 2, 2, 0, 1, 4, 2, 1, 2, 0, 0, 2, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(30, 'abiyosoa2@gmail.com', 32, 5, 2, 2, 1, 3, 4, 4, 3, 1, 4, 1, 2, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(31, 'abiyosoa2@gmail.com', 32, 5, 2, 2, 1, 3, 4, 4, 3, 1, 4, 1, 2, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(32, 'abiyosoa2@gmail.com', 32, 5, 5, 5, 1, 1, 3, 2, 1, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(33, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(34, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(35, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(36, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(37, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(38, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(39, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(40, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(41, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(42, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(43, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(44, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(45, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(46, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(47, 'abiyosoa2@gmail.com', 23, 5, 2, 2, 0, 0, 3, 2, 0, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(48, 'abiyosoa@gmail.com', 28, 5, 5, 2, 0, 1, 3, 2, 1, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(49, 'abiyosoa@gmail.com', 28, 5, 5, 2, 0, 1, 3, 2, 1, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(50, 'abiyosoa@gmail.com', 28, 5, 5, 2, 0, 1, 3, 2, 1, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(51, 'abiyosoa6@gmail.com', 28, 5, 5, 2, 0, 1, 3, 2, 1, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(52, 'abiyosoa6@gmail.com', 32, 5, 2, 2, 1, 3, 4, 4, 3, 2, 3, 1, 2, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(53, 'abiyosoa2@gmail.com', 35, 5, 5, 2, 1, 3, 4, 4, 3, 2, 3, 1, 2, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(54, 'abiyosoa2@gmail.com', 37, 5, 2, 5, 1, 1, 3, 4, 3, 5, 3, 3, 2, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(55, 'abiyosoa2@gmail.com', 37, 5, 2, 1, 5, 5, 5, 5, 3, 2, 3, 1, 0, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(56, 'abiyosoa@gmail.com', 31, 5, 5, 5, 0, 1, 3, 2, 1, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(57, 'bayu.adityoramadhan@gmail.com', 27, 3, 5, 2, 1, 0, 3, 4, 1, 2, 4, 1, 1, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
+(58, 'abiyosoa@gmail.com', 25, 5, 5, 5, 0, 0, 0, 0, 0, 0, 4, 5, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda');
 
 -- --------------------------------------------------------
 
@@ -405,9 +605,27 @@ ALTER TABLE `asuransi_jiwa`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `dana_pendidikan_result`
+--
+ALTER TABLE `dana_pendidikan_result`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dana_pensiun_result`
+--
+ALTER TABLE `dana_pensiun_result`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `financial_health`
 --
 ALTER TABLE `financial_health`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `financial_health_result`
+--
+ALTER TABLE `financial_health_result`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -430,13 +648,31 @@ ALTER TABLE `asuransi`
 -- AUTO_INCREMENT for table `asuransi_jiwa`
 --
 ALTER TABLE `asuransi_jiwa`
-  MODIFY `id` tinyint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
+
+--
+-- AUTO_INCREMENT for table `dana_pendidikan_result`
+--
+ALTER TABLE `dana_pendidikan_result`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
+--
+-- AUTO_INCREMENT for table `dana_pensiun_result`
+--
+ALTER TABLE `dana_pensiun_result`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `financial_health`
 --
 ALTER TABLE `financial_health`
   MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `financial_health_result`
+--
+ALTER TABLE `financial_health_result`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `keterangan`

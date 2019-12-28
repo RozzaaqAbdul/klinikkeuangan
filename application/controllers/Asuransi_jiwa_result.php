@@ -210,11 +210,11 @@ $pdf->lastPage();
 // Fungsi ob_clean untuk menghapus output buffer
 ob_clean();
 //$pdf->Output('Asurani Jiwa Result.pdf', 'D');
-if (!is_dir(FCPATH  . '/assets/file/'.$data_asuransi[0]->email)) {
-    mkdir(FCPATH  . '/assets/file/'.$data_asuransi[0]->email, 0777, TRUE);
+if (!is_dir(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email)) {
+    mkdir(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email, 0777, TRUE);
 
 }
-$pdf->Output(FCPATH  . '/assets/file/'.$data_asuransi[0]->email.'/asuransi_jiwa.pdf', 'F');
+$pdf->Output(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email.'/asuransi_jiwa.pdf', 'F');
 
     //$this->load->view('pdf_asuransi_jiwa', $isi);
     $this->load->view('asuransi_jiwa_result', $data);
@@ -274,7 +274,7 @@ $pdf->Output(FCPATH  . '/assets/file/'.$data_asuransi[0]->email.'/asuransi_jiwa.
           $this->email->to($email);
           $this->email->subject($subject);
           $this->email->message($message);
-          $this->email->attach('assets/file/'.$email.'/asuransi_jiwa.pdf');
+          $this->email->attach('assets/file/asuransi_jiwa/'.$email.'/asuransi_jiwa.pdf');
           if($this->email->send())
          {
           $this->session->set_flashdata('msg', 

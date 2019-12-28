@@ -95,8 +95,14 @@
             <div class="row" style="padding-top:0px">
             	<div class="col-sm-9 d-none d-sm-block" style="padding-left:30vw;padding-top:5vw; z-index: 0;">
             	<form id="simulasi-jiwa-form" method="get" action="<?php echo base_url()?>dana_pendidikan_result/get" role="form">
-
-			    <div class="form-group">
+        <div class="form-group">
+            <strong>
+            <label for="exampleInputEmail1">Email</label>
+            </strong>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+                  
+			   <div class="form-group">
 			    	<strong>
 				    <label for="exampleInputEmail1">Usia anak saat ini (dari ulang tahun terakhir)</label>
 				    </strong>

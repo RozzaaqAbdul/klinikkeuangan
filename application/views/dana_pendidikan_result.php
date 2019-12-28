@@ -93,10 +93,18 @@
     <div class="intro-container">
         <div class="col-sm-12" style="background: url('<?php echo base_url('assets/img/home/Header Background RED.svg');?>'); background-repeat: no-repeat; background-size: cover; height:100vh">
             <div class="row" style="padding-top:0px">
-            	<div class="col-sm-9 d-none d-sm-block" style="padding-left:30vw;padding-top:5vw; z-index: 0;">
+            	<div class="col-sm-9 d-none d-sm-block" style="padding-left:30vw; padding-top:5vw; padding-bottom:2vw; z-index: 0;">
             		<div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div>
             	<form id="simulasi-jiwa-form" method="post" action="<?php echo base_url()?>dana_pendidikan_result/send_to_mail" role="form">
 
+          <div class="form-group">
+              <strong>
+                  <label for="validationDefaultUsername" hidden="">Email </label>
+              </strong>
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="email" name="email" value="<?php echo $email ?>" readonly hidden>
+                    </div>
+          </div>      
 			    <div class="form-group">
 			        <strong>
 			            <label for="validationDefaultUsername">Sisa waktu untuk perencanaan dana pendidikan: </label>
@@ -167,15 +175,14 @@
 			    </div>
 
 			  
-          <!-- <button class="btn btn-primary btn-sm btn-block" type="submit" style="margin-bottom:10px">Send to email</button> -->
+          <button class="btn btn-primary btn-sm btn-block" type="submit" style="margin-bottom:10px">Send to email</button>
 			</form>
-      <!-- <form id="generate_to_pdf" method="post" action="<?php echo base_url()?>asuransi_jiwa_result/generate_to_pdf" role="form">
+      <form id="generate_to_pdf" method="post" action="<?php echo base_url()?>dana_pendidikan_result/generate_to_pdf" role="form">
         <button class="btn btn-danger btn-sm btn-block" type="submit" style="margin-bottom:10px">Generate to PDF</button>
-      </form> -->
+      </form>
         <button class="btn btn-secondary btn-sm btn-block" type="" style="margin-bottom:10px" onclick="document.location.href='<?php echo base_url();?>'" >Cancel</button>
 		</div>
            </div>
-            
         </div>
     </div>
   </section>

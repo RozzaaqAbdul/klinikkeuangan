@@ -97,6 +97,14 @@
             	<form id="simulasi-jiwa-form" method="get" action="<?php echo base_url()?>dana_pensiun_result/get" role="form">
 
 			    <div class="form-group">
+            <strong>
+                  <label for="validationDefaultUsername">Email :</label>
+              </strong>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+          <div class="form-group">
 			    	<strong>
 				    <label for="exampleInputEmail1">Usia Anda saat ini (pilih yang terdekat dengan usia Anda saat ini)</label>
                     </strong>
@@ -111,7 +119,7 @@
 
                 <div class="form-group">
 			    	<strong>
-				    <label for="exampleInputEmail1">Usia masuk jenjang pendidikan yang dituju</label>
+				    <label for="exampleInputEmail1">Berapa nilai uang pensiun bulanan yang ingin Anda dapat saat pensiun kelak jika disetarakan dengan nilai pada saat ini ? (pilih nilai terdekat)</label>
                     </strong>
                     </br>
 				    <input type="radio" id='q2' name="q2" value="4" required>4 Juta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
