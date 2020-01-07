@@ -318,7 +318,7 @@
       <div class="container text-center">
         <h3>Menyongsong Masa Depan Dengan Bekal Pendidikan Terbaik</h3>
         <p> Artikel Pendek Mengenai Perencanaan Pendidikan.</p>
-        <a class="cta-btn" href="#">Lihat Semua Artikel</a>
+        <a class="cta-btn" href="<?=site_url("artikel")?>">Lihat Semua Artikel</a>
       </div>
     </section><!-- #call-to-action -->
 

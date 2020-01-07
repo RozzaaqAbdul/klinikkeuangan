@@ -7,7 +7,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-3 footer-info">
-            <h5 ><img src="assets/img/klinik-logo.png"> <a href="#intro" style="color: #1cac58;"><strong>Klinik Keuangan</strong></a></h5>
+          <h5 ><img src="assets/img/home/logobaru.jpg" style=" height: 50px;"> <a href="#intro" style="color: #CC0000;"><strong>Klinik Keuangan</strong></a></h5>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
           </div>
 
