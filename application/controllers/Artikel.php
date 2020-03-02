@@ -6,4 +6,8 @@ class Artikel extends CI_Controller {
 	{
 		$this->load->view('artikel_list');
 	}
+
+	public function detail() {
+		$this->load->view('artikel_detail');
+	}
 }

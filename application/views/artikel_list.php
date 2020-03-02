@@ -186,5 +186,11 @@ form.example::after {
   <!-- Template Main Javascript File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    $( ".gallery" ).click(function() {
+      window.location.href = '<?=site_url("artikel/detail")?>';
+    });
+  </script>
+
 </body>
 </html>
