@@ -221,7 +221,7 @@ $pdf->lastPage();
 //Close and output PDF document
 // Fungsi ob_clean untuk menghapus output buffer
 ob_clean();
-$pdf->Output('perencanaan_dana_pendidikan.pdf', 'I');
+$pdf->Output('perencanaan_dana_pendidikan.pdf', 'D');
 
 //============================================================+
 // END OF FILE

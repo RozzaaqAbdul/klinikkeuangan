@@ -259,8 +259,8 @@ $pdf->Output(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email.'/
       'protocol' => 'smtp',
       'smtp_host' => 'smtp.gmail.com',
       'smtp_port' => 465,
-      'smtp_user' => 'klinik.keuangan@gmail.com', 
-      'smtp_pass' => 'winiharto', 
+      'smtp_user' => 'rencanakeuanganmu@gmail.com', 
+      'smtp_pass' => 'kl1n1kk3u4n64n', 
       'mailtype' => 'html',
       'charset' => 'utf-8',
       'smtp_crypto' => 'ssl',
@@ -270,7 +270,7 @@ $pdf->Output(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email.'/
 
           $this->load->library('email', $config);
           $this->email->set_newline("\r\n");
-          $this->email->from('klinik.keuangan@gmail.com');
+          $this->email->from('rencanakeuanganmu@gmail.com');
           $this->email->to($email);
           $this->email->subject($subject);
           $this->email->message($message);
