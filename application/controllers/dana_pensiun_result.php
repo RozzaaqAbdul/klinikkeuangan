@@ -324,8 +324,8 @@ class Dana_pensiun_result extends CI_Controller {
       'protocol' => 'smtp',
       'smtp_host' => 'smtp.gmail.com',
       'smtp_port' => 465,
-      'smtp_user' => 'abiyosoa@gmail.com', 
-      'smtp_pass' => 'zeotzoio23', 
+      'smtp_user' => 'klinik.keuangan@gmail.com', 
+      'smtp_pass' => 'winiharto', 
       'mailtype' => 'html',
       'charset' => 'utf-8',
       'smtp_crypto' => 'ssl',
@@ -335,7 +335,7 @@ class Dana_pensiun_result extends CI_Controller {
 
           $this->load->library('email', $config);
           $this->email->set_newline("\r\n");
-          $this->email->from('abiyosoa@gmail.com');
+          $this->email->from('klinik.keuangan@gmail.com');
           $this->email->to($email);
           $this->email->subject($subject);
           $this->email->message($message);
