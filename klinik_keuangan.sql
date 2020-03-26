@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 28, 2019 at 03:00 PM
+-- Generation Time: Mar 26, 2020 at 08:34 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -208,7 +208,11 @@ INSERT INTO `asuransi_jiwa` (`id`, `email`, `value1`, `value2`, `value3`, `total
 (143, 'bayu.adityoramadhan@gmail.com', 3000000, 7000000, 10000000, '7000000'),
 (144, 'bayu.adityoramadhan@gmail.com', 123, 123, 123, '0'),
 (145, 'bayu.adityoramadhan@gmail.com', 4000000, 6000000, 10000000, '6000000'),
-(146, 'bayu.adityoramadhan@gmail.com', 3000000, 5000000, 10000000, '7000000');
+(146, 'bayu.adityoramadhan@gmail.com', 3000000, 5000000, 10000000, '7000000'),
+(147, 'abiyosoa@gmail.com', 1, 2, 3, '402'),
+(148, 'abiyosoa@gmail.com', 1, 2, 3, '402'),
+(149, 'abiyosoa@gmail.com', 1, 2, 3, '402'),
+(150, 'abiyosoa@gmail.com', 1, 2, 3, '402');
 
 -- --------------------------------------------------------
 
@@ -648,7 +652,7 @@ ALTER TABLE `asuransi`
 -- AUTO_INCREMENT for table `asuransi_jiwa`
 --
 ALTER TABLE `asuransi_jiwa`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=151;
 
 --
 -- AUTO_INCREMENT for table `dana_pendidikan_result`
