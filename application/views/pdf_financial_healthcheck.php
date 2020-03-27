@@ -272,9 +272,9 @@ $table .='
 // $tahunLog = date("Y");
 // $dateNow = $tanggalLog . ' ' . $bulanLog . ' ' . $tahunLog; 
 
-$mydate=getdate(date("U"));
+// $mydate=getdate(date("U"));
 //echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
-$dateNow = $mydate[mday] . ' ' . $mydate[month] . ' ' . $mydate[year]; 
+// $dateNow = $mydate[mday] . ' ' . $mydate[month] . ' ' . $mydate[year]; 
 
  $table .= '  
  
