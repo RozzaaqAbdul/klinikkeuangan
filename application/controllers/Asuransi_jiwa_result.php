@@ -187,6 +187,18 @@ $dateNow = $mydate[mday] . ' ' . $mydate[month] . ' ' . $mydate[year];
         <td align="right" colspan="3"> Jakarta, '.$dateNow.'</td>
     </tr>
 </table>
+<p>SELAMAT ! <br>
+
+Anda telah lakukan langkah awal untuk mengetahui tingkat kesehatan finansial Anda dan keluarga. <br>
+
+Untuk kajian lebih rinci mengenai perencanaan dana pensiun Anda dan perencanaan investasi untuk dana pensiun Anda, silakan hubungi Biro Perencanaan Keuangan Klinik Keuangan di e-mail klinik.keuangan@gmail.com atau di nomor telepon 0838-77-600-800 (chat WhasApp, SMS,telepon). <br><br>
+
+
+======== <br>
+
+<b>DISCLAIMER</b> <br>
+
+Informasi ini hanya simulasi sederhana dan ilustrasi ringkas untuk referensi umum. Simulasi yang akurat membutuhkan informasi yang lebih detail dan lengkap.</p>
 
 ';
     //}
@@ -209,18 +221,16 @@ $pdf->lastPage();
 //Close and output PDF document
 // Fungsi ob_clean untuk menghapus output buffer
 ob_clean();
-//$pdf->Output('Asurani Jiwa Result.pdf', 'D');
 if (!is_dir(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email)) {
     mkdir(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email, 0777, TRUE);
 
 }
 $pdf->Output(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email.'/asuransi_jiwa.pdf', 'F');
 
-    //$this->load->view('pdf_asuransi_jiwa', $isi);
     $this->load->view('asuransi_jiwa_result', $data);
-    
 
-  }
+}
+
 
 	public function insert(){
     $email		= $this->input->post('email');

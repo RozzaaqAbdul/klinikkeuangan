@@ -237,7 +237,7 @@ class Dana_pensiun_result extends CI_Controller {
                         <td align="center" colspan="2"></td>
                     </tr>
                     <tr>
-                        <td align="center">6</td>
+                        <td align="center">7</td>
                         <td colspan="8">Nilai investasi bulanan yang diperlukan untuk pensiun - imbal hasil rendah</td>
                         <td colspan="3" align="center"> '.number_format($row->investasi_rendah).'</td>
                         <td align="center" colspan="2"></td>
