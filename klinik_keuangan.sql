@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 26, 2020 at 08:34 AM
+-- Generation Time: Mar 28, 2020 at 05:36 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -212,7 +212,17 @@ INSERT INTO `asuransi_jiwa` (`id`, `email`, `value1`, `value2`, `value3`, `total
 (147, 'abiyosoa@gmail.com', 1, 2, 3, '402'),
 (148, 'abiyosoa@gmail.com', 1, 2, 3, '402'),
 (149, 'abiyosoa@gmail.com', 1, 2, 3, '402'),
-(150, 'abiyosoa@gmail.com', 1, 2, 3, '402');
+(150, 'abiyosoa@gmail.com', 1, 2, 3, '402'),
+(151, 'abiyosoa@gmail.com', 123, 123123, 123123123, '147747600'),
+(152, 'abiyosoa@gmail.com', 123, 123123, 123123123, '147747600'),
+(153, 'abiyosoa@gmail.com', 12, 123, 1234, '25822'),
+(154, 'abiyosoa@gmail.com', 12, 123, 1234, '25822'),
+(155, 'abiyosoa@gmail.com', 1, 2, 3, '402'),
+(156, 'abiyosoa@gmail.com', 1, 2, 3, '402'),
+(157, 'abiyosoa@gmail.com', 123, 1123231, 2, '224646079'),
+(158, 'abiyosoa@gmail.com', 2, 2, 2, '400'),
+(159, 'abiyosoa@gmail.com', 12, 123, 1234, '25822'),
+(160, 'abiyosoa@gmail.com', 1, 2, 3, '402');
 
 -- --------------------------------------------------------
 
@@ -264,7 +274,23 @@ INSERT INTO `dana_pendidikan_result` (`id`, `email`, `sisa_waktu`, `value3`, `da
 (26, 'abiyosoa@gmail.com', '15', '10000000', '41772481.694157', '120716380.69235', '83615167.094725', '56546325.852347'),
 (27, 'abiyosoa@gmail.com', '14', '10000000', '37974983.358324', '123286364.6349', '87885324.265043', '61334188.623235'),
 (28, 'bayu.adityoramadhan@gmail.com', '11', '10000000', '28531167.0611', '135488241.82683', '104934173.91731', '80167993.417681'),
-(29, 'bayu.adityoramadhan@gmail.com', '11', '10000000', '28531167.0611', '135488241.82683', '104934173.91731', '80167993.417681');
+(29, 'bayu.adityoramadhan@gmail.com', '11', '10000000', '28531167.0611', '135488241.82683', '104934173.91731', '80167993.417681'),
+(30, 'abiyosoa2@gmail.com', '17', '10000000', '50544702.849929', '117056566.6507', '76431438.682072', '48449576.77855'),
+(31, 'abiyosoa2@gmail.com', '17', '10000000', '50544702.849929', '117056566.6507', '76431438.682072', '48449576.77855'),
+(32, 'abiyosoa2@gmail.com', '17', '10000000', '50544702.849929', '117056566.6507', '76431438.682072', '48449576.77855'),
+(33, 'abiyosoa2@gmail.com', '17', '10000000', '50544702.849929', '117056566.6507', '76431438.682072', '48449576.77855'),
+(34, 'abiyosoa2@gmail.com', '17', '10000000', '50544702.849929', '117056566.6507', '76431438.682072', '48449576.77855'),
+(35, 'abiyosoa2@gmail.com', '17', '10000000', '50544702.849929', '117056566.6507', '76431438.682072', '48449576.77855'),
+(36, 'abiyosoa2@gmail.com', '17', '10000000', '50544702.849929', '117056566.6507', '76431438.682072', '48449576.77855'),
+(37, 'abiyosoa@gmail.com', '18', '10000000', '55599173.134922', '115810830.34766', '73363321.621187', '44987367.427043'),
+(38, 'abiyosoa@gmail.com', '18', '10000000', '55599173.134922', '115810830.34766', '73363321.621187', '44987367.427043'),
+(39, 'abiyosoa@gmail.com', '1', '4', '4.4', '353.41575464252', '346.9346701847', '340.54910791385'),
+(40, 'abiyosoa@gmail.com', '1', '4', '4.4', '353.41575464252', '346.9346701847', '340.54910791385'),
+(41, 'abiyosoa@gmail.com', '1', '4', '4.4', '353.41575464252', '346.9346701847', '340.54910791385'),
+(42, 'abiyosoa@gmail.com', '18', '20000000', '111198346.26984', '231621660.69532', '146726643.24237', '89974734.854085'),
+(43, 'abiyosoa@gmail.com', '18', '20000000', '111198346.26984', '231621660.69532', '146726643.24237', '89974734.854085'),
+(44, 'abiyosoa@gmail.com', '18', '20000000', '111198346.26984', '231621660.69532', '146726643.24237', '89974734.854085'),
+(45, 'abiyosoa@gmail.com', '14', '10000000', '37974983.358324', '123286364.6349', '87885324.265043', '61334188.623235');
 
 -- --------------------------------------------------------
 
@@ -305,7 +331,21 @@ INSERT INTO `dana_pensiun_result` (`id`, `email`, `pensiun_now`, `pensiun_per_bu
 (21, 'abiyosoa@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
 (22, 'abiyosoa2@gmail.com', '9000000', '48846893.761106', '586162725.13327', '10072314634.4422', '1755598.73220206', '3736262.32328836', '3736262.32328836'),
 (23, 'abiyosoa@gmail.com', '20000000', '152245100.853241', '1826941210.2389', '31393205161.5374', '2224325.3069896', '5715159.49234222', '13887800.4244899'),
-(24, 'bayu.adityoramadhan@gmail.com', '12000000', '91347060.5119444', '1096164726.1433', '18835923096.9224', '1334595.18419376', '3429095.69540533', '8332680.25469395');
+(24, 'bayu.adityoramadhan@gmail.com', '12000000', '91347060.5119444', '1096164726.1433', '18835923096.9224', '1334595.18419376', '3429095.69540533', '8332680.25469395'),
+(25, 'abiyosoa@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(26, 'abiyosoa@gmail.com', '9000000', '68510295.3839583', '822123544.6075', '14126942322.6918', '1000946.38814532', '2571821.771554', '6249510.19102046'),
+(27, 'abiyosoa@gmail.com', '6000000', '45673530.2559722', '548082363.07167', '9417961548.46122', '667297.592096881', '1714547.84770267', '4166340.12734697'),
+(28, 'abiyosoa@gmail.com', '12000000', '16830620.7684', '201967449.2208', '3470503338.48012', '36070424.5840329', '40263336.6377914', '44817078.4492919'),
+(29, 'abiyosoa@gmail.com', '12000000', '91347060.5119444', '1096164726.1433', '18835923096.9224', '1334595.18419376', '3429095.69540533', '8332680.25469395'),
+(30, 'abiyosoa@gmail.com', '12000000', '65129191.6814747', '781550300.1777', '13429752845.9229', '2340798.30960275', '4981683.09771782', '4981683.09771782'),
+(31, 'abiyosoa@gmail.com', '12000000', '46436213.5498342', '557234562.59801', '9575228173.0245', '4147177.18723555', '7358959.68371642', '12609456.3263734'),
+(32, 'abiyosoa@gmail.com', '12000000', '33108378.488584', '397300541.86301', '6827005352.76913', '7538450.27129666', '11269660.0529539', '16471637.633988'),
+(33, 'abiyosoa@gmail.com', '12000000', '23605816.2874748', '283269795.4497', '4867560463.78542', '14692828.1443449', '18788670.6449763', '23762166.3456988'),
+(34, 'abiyosoa@gmail.com', '12000000', '16830620.7684', '201967449.2208', '3470503338.48012', '36070424.5840329', '40263336.6377914', '44817078.4492919'),
+(35, 'abiyosoa@gmail.com', '12000000', '65129191.6814747', '781550300.1777', '13429752845.9229', '2340798.30960275', '4981683.09771782', '4981683.09771782'),
+(36, 'abiyosoa@gmail.com', '12000000', '65129191.6814747', '781550300.1777', '13429752845.9229', '2340798.30960275', '4981683.09771782', '4981683.09771782'),
+(37, 'abiyosoa@gmail.com', '12000000', '65129191.6814747', '781550300.1777', '13429752845.9229', '2340798.30960275', '4981683.09771782', '10121657.1857314'),
+(38, 'abiyosoa@gmail.com', '12000000', '65129191.6814747', '781550300.1777', '13429752845.9229', '2340798.30960275', '4981683.09771782', '10121657.1857314');
 
 -- --------------------------------------------------------
 
@@ -454,7 +494,9 @@ INSERT INTO `financial_health_result` (`id`, `email`, `score`, `value_1`, `value
 (55, 'abiyosoa2@gmail.com', 37, 5, 2, 1, 5, 5, 5, 5, 3, 2, 3, 1, 0, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
 (56, 'abiyosoa@gmail.com', 31, 5, 5, 5, 0, 1, 3, 2, 1, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
 (57, 'bayu.adityoramadhan@gmail.com', 27, 3, 5, 2, 1, 0, 3, 4, 1, 2, 4, 1, 1, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko'),
-(58, 'abiyosoa@gmail.com', 25, 5, 5, 5, 0, 0, 0, 0, 0, 0, 4, 5, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda');
+(58, 'abiyosoa@gmail.com', 25, 5, 5, 5, 0, 0, 0, 0, 0, 0, 4, 5, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(59, 'abiyosoa@gmail.com', 24, 3, 2, 2, 1, 1, 3, 2, 1, 1, 4, 3, 1, 'Anda memiliki kesehatan finansial yang cukup baik, memiliki manajemen resiko yang memadai, dan cadangan keuangan minimum untuk mengantisipasi resiko pada Anda'),
+(60, 'abiyosoa@gmail.com', 27, 5, 2, 1, 1, 3, 3, 2, 3, 1, 3, 1, 2, 'Anda memiliki kesehatan finansial yang sedang dalam hal keuangan, Anda memiliki manajemen resiko minimal namun kemungkinan tidak mencukupi saat terjadi suatu resiko');
 
 -- --------------------------------------------------------
 
@@ -478,7 +520,7 @@ CREATE TABLE `investasi_pensiun_rendah` (
 
 INSERT INTO `investasi_pensiun_rendah` (`age`, `var_1`, `var_2`, `var_3`, `var_4`, `var_5`, `var_6`) VALUES
 (25, 2777560.08489798, 4166340.12734697, 6249510.19102046, 8332680.25469395, 10415850.3183674, 13887800.4244899),
-(30, 3373885.72857713, 2490841.54885891, 3736262.32328836, 4981683.09771782, 6227103.87214728, 8302805.16286303),
+(30, 3373885.72857713, 5060828.5928657, 7591242.88929855, 10121657.1857314, 12652071.4821643, 16869428.6428857),
 (35, 4203152.10879113, 6304728.1631867, 9457092.24478005, 12609456.3263734, 15761820.4079668, 21015760.5439557),
 (40, 5490545.87799601, 8235818.81699401, 12353728.225491, 16471637.633988, 20589547.042485, 27452729.38998),
 (45, 7920722.11523292, 11881083.1728494, 17821624.7592741, 23762166.3456988, 29702707.9321234, 39603610.5761646),
@@ -633,6 +675,12 @@ ALTER TABLE `financial_health_result`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `investasi_pensiun_rendah`
+--
+ALTER TABLE `investasi_pensiun_rendah`
+  ADD PRIMARY KEY (`age`);
+
+--
 -- Indexes for table `keterangan`
 --
 ALTER TABLE `keterangan`
@@ -652,19 +700,19 @@ ALTER TABLE `asuransi`
 -- AUTO_INCREMENT for table `asuransi_jiwa`
 --
 ALTER TABLE `asuransi_jiwa`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=151;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=161;
 
 --
 -- AUTO_INCREMENT for table `dana_pendidikan_result`
 --
 ALTER TABLE `dana_pendidikan_result`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `dana_pensiun_result`
 --
 ALTER TABLE `dana_pensiun_result`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `financial_health`
@@ -676,7 +724,7 @@ ALTER TABLE `financial_health`
 -- AUTO_INCREMENT for table `financial_health_result`
 --
 ALTER TABLE `financial_health_result`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `keterangan`
