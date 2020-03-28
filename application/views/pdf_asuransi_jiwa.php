@@ -184,9 +184,22 @@ $table .='</table>';
         <td></td>
         <td></td>
         <td></td>
-        <td align="right" colspan="3"> Jakarta, '.$dateNow.'</td>
+        <td align="right" colspan="3"> '.$dateNow.'</td>
     </tr>
 </table>
+
+<p>SELAMAT ! <br>
+
+Anda telah lakukan langkah awal untuk mengetahui tingkat kesehatan finansial Anda dan keluarga. <br>
+
+Untuk kajian lebih rinci mengenai perencanaan dana pensiun Anda dan perencanaan investasi untuk dana pensiun Anda, silakan hubungi Biro Perencanaan Keuangan Klinik Keuangan di e-mail klinik.keuangan@gmail.com atau di nomor telepon 0838-77-600-800 (chat WhasApp, SMS,telepon). <br><br>
+
+
+======== <br>
+
+<b>DISCLAIMER</b> <br>
+
+Informasi ini hanya simulasi sederhana dan ilustrasi ringkas untuk referensi umum. Simulasi yang akurat membutuhkan informasi yang lebih detail dan lengkap.</p>
 
 ';
     //}

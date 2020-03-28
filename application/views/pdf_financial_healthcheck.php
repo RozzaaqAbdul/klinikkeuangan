@@ -288,7 +288,7 @@ $table .='
         <td></td>
         <td></td>
         <td></td>
-        <td align="right" colspan="3"> Jakarta, '.$dateNow.'</td>
+        <td align="right" colspan="3">'.$dateNow.'</td>
     </tr>
 </table>
 
