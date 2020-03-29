@@ -112,7 +112,7 @@
 			        <div class="input-group-prepend">
 			          <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
 			        </div>
-			        <input type="number" class="form-control" id="value1" name="value1" value="<?php echo number_format($value1) ?>" placeholder="1000000" aria-describedby="inputGroupPrepend2" readonly>
+			        <input type="text" class="form-control" id="value1" name="value1" value="<?php echo number_format($value1) ?>" placeholder="1000000" aria-describedby="inputGroupPrepend2" readonly>
 			      </div>
 			    </div>
 
@@ -124,7 +124,7 @@
 			        <div class="input-group-prepend">
 			          <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
 			        </div>
-			        <input type="number" class="form-control" id="value2" name="value2" value="<?php echo number_format($value2) ?>" placeholder="8000000" aria-describedby="inputGroupPrepend2" readonly>
+			        <input type="text" class="form-control" id="value2" name="value2" value="<?php echo number_format($value2) ?>" placeholder="8000000" aria-describedby="inputGroupPrepend2" readonly>
 			      </div>
 			    </div>
 
@@ -136,7 +136,7 @@
 			        <div class="input-group-prepend">
 			          <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
 			        </div>
-			        <input type="number" class="form-control" id="value3" name="value3" value="<?php echo number_format($value3) ?>" placeholder="10000000" aria-describedby="inputGroupPrepend2" readonly>
+			        <input type="text" class="form-control" id="value3" name="value3" value="<?php echo number_format($value3) ?>" placeholder="10000000" aria-describedby="inputGroupPrepend2" readonly>
 			      </div>
 			    </div>
 
@@ -145,7 +145,7 @@
             <label for="validationDefaultUsername">Maka kebutuhan nilai pertanggungan asuransi jiwa Anda </label>
             </strong>
 			      <div class="input-group">
-			        <input type="text" class="form-control" id="total" name="total" value="<?php echo $total ?>" placeholder="Total" aria-describedby="inputGroupPrepend2" readonly >
+			        <input type="text" class="form-control" id="total" name="total" value="<?php echo number_format($total) ?>" placeholder="Total" aria-describedby="inputGroupPrepend2" readonly >
 			      </div>
 			    </div>
           <button class="btn btn-primary btn-sm btn-block" type="submit" style="margin-bottom:10px">Send to email</button>

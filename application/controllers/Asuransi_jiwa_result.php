@@ -32,8 +32,9 @@ class asuransi_jiwa_result extends CI_Controller {
      'total'   => $total
    );
 
+   
+   $this->model_asuransijiwa->inputDataAsuransi($data,'asuransi_jiwa');
     $isi['data_asuransi'] = $this->model_asuransijiwa->tampilDataAsuransiJiwa();
-    $this->model_asuransijiwa->inputDataAsuransi($data,'asuransi_jiwa');
 
     $data_asuransi = $isi['data_asuransi'] ;
 
