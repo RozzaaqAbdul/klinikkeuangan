@@ -106,8 +106,8 @@
 	                 <thead>
 	                   <tr>
 	                    <th style="width: 5%; text-align: center">No</th>
-	                    <th style="width: 95%; text-align: center">Pertanyaan</th>
-	                    <th style="width: 10%; text-align: center">Score</th>
+	                    <th style="width: 85%; text-align: center">Pertanyaan</th>
+	                    <th style="width: 20%; text-align: center">Variable</th>
 	                  </tr>
 	                </thead>
 	                <tbody>
@@ -119,8 +119,8 @@
 	                    <td >
 	                      <label><?php echo $question1?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_1?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable1?></label>
 	                    </td>
 	                  </tr>
 	                  
@@ -130,8 +130,8 @@
 	                    <td >
 	                      <label><?php echo $question2?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_2?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable2?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -139,8 +139,8 @@
 	                    <td >
 	                      <label><?php echo $question3?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_3?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable3?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -148,8 +148,8 @@
 	                    <td >
 	                      <label><?php echo $question4?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_4?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable4?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -157,8 +157,8 @@
 	                    <td >
 	                      <label><?php echo $question5?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_5?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable5?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -166,8 +166,8 @@
 	                    <td >
 	                      <label><?php echo $question6?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_6?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable6?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -175,8 +175,8 @@
 	                    <td >
 	                      <label><?php echo $question7?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_7?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable7?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -184,8 +184,8 @@
 	                    <td >
 	                      <label><?php echo $question8?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_8?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable8?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -193,8 +193,8 @@
 	                    <td >
 	                      <label><?php echo $question9?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_9?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable9?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -202,8 +202,8 @@
 	                    <td >
 	                      <label><?php echo $question10?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_10?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable10?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -211,8 +211,8 @@
 	                    <td >
 	                      <label><?php echo $question11?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_11?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable11?></label>
 	                    </td>
 	                  </tr>
 	                  <tr>
@@ -220,8 +220,8 @@
 	                    <td >
 	                      <label><?php echo $question12?></label>    
 	                    </td>
-	                    <td>
-	                      <label><?php echo $value_12?></label>
+	                    <td align="center">
+	                      <label><?php echo $variable12?></label>
 	                    </td>
 	                  </tr>
 
@@ -245,9 +245,9 @@
 	      <button class="btn btn-primary btn-sm" type="submit" style="margin-left: 69vw">Send to email</button>
 	  </form>
 
-	  <form id="generate_to_pdf" method="post" action="<?php echo base_url()?>financial_healthcheck_result/generate_to_pdf" role="form">
+	  <!-- <form id="generate_to_pdf" method="post" action="<?php echo base_url()?>financial_healthcheck_result/generate_to_pdf" role="form">
 	      <button class="btn btn-danger btn-sm" type="submit" style="margin-left: 1vw">Generate to PDF</button>
-	  </form>
+	  </form> -->
 
 	  <button class="btn btn-secondary btn-sm" type="submit" style="margin-left: 1vw" onclick="document.location.href='<?php echo base_url();?>'" >Cancel</button>
 	  </div>

@@ -100,6 +100,7 @@
             <label for="exampleInputEmail1">Email</label>
             </strong>
             <input type="email" class="form-control" id="email" name="email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
                   
 			   <div class="form-group">
@@ -124,8 +125,10 @@
 			        <div class="input-group-prepend">
 			          <span class="input-group-text" id="inputGroupPrepend2">Rp.</span>
 			        </div>
-			        <input type="number" class="form-control" id="value3" name="value3" placeholder="8000000" aria-describedby="inputGroupPrepend2" required>
+			        <input type="number" class="form-control" id="value3" name="value3" placeholder="<?php echo number_format("10000000")?> (minimum)" aria-describedby="inputGroupPrepend2" min="10000000" required>
+
 			      </div>
+            <small id="emailHelp" class="form-text text-muted">*Please input cost education without comma (,) or dot (.)</small>
 			    </div>
 
                 <div class="form-group">

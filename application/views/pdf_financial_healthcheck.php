@@ -141,7 +141,7 @@ $table .= '
                           <label>'.$question1.'</label>    
                         </td>
                         <td style="width: 10%; text-align: center">
-                          <label>'.$value_1.'</label>
+                          <label>'.$variable1.'</label>
                         </td>
                       </tr>
                       
@@ -152,7 +152,7 @@ $table .= '
                           <label>'.$question2.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_2.'</label>
+                          <label>'.$variable2.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -161,7 +161,7 @@ $table .= '
                           <label>'.$question3.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_3.'</label>
+                          <label>'.$variable3.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -170,7 +170,7 @@ $table .= '
                           <label>'.$question4.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_4.'</label>
+                          <label>'.$variable4.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -179,7 +179,7 @@ $table .= '
                           <label>'.$question5.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_5.'</label>
+                          <label>'.$variable5.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -188,7 +188,7 @@ $table .= '
                           <label>'.$question6.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_6.'</label>
+                          <label>'.$variable6.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -197,7 +197,7 @@ $table .= '
                           <label>'.$question7.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_7.'</label>
+                          <label>'.$variable7.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -206,7 +206,7 @@ $table .= '
                           <label>'.$question8.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_8.'</label>
+                          <label>'.$variable8.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -215,7 +215,7 @@ $table .= '
                           <label>'.$question9.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_9.'</label>
+                          <label>'.$variable9.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -224,7 +224,7 @@ $table .= '
                           <label>'.$question10.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_10.'</label>
+                          <label>'.$variable10.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -233,7 +233,7 @@ $table .= '
                           <label>'.$question11.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_11.'</label>
+                          <label>'.$variable11.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -242,7 +242,7 @@ $table .= '
                           <label>'.$question12.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_12.'</label>
+                          <label>'.$variable12.'</label>
                         </td>
                       </tr>
                 </tbody>

@@ -192,7 +192,7 @@
                 <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Perencanaan <br> Keuangan</a></h2>
+              <h2 class="title"><a href="<?php echo base_url();?>layanan1">Perencanaan <br> Keuangan</a></h2>
               <br>
               <!-- <p> <b>1. Perencanaan Keuangan Komprehensif </b><br>
                 Membuat suatu perencanaan secara menyeluruh.
@@ -210,7 +210,7 @@
                 <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-list-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Saran <br> Keuangan</a></h2>
+              <h2 class="title"><a href="<?php echo base_url();?>layanan2">Saran <br> Keuangan</a></h2>
               <br>
               <!-- <p>
                 Layanan Saran Keuangan adalah layanan kami yang dapat diakses klien baik secara online maupun offline. Layanan ini dapat disajikan dalam bentuk sesi konsultasi temu muka, sesi konsultasi melalui telepon, bahkan sesi konsultasi interaktif melalui media chat atau e-mail.
@@ -225,7 +225,7 @@
                 <img src="assets/img/about-vision.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-eye-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Analisa Produk dan Jasa Keuangan</a></h2>
+              <h2 class="title"><a href="<?php echo base_url();?>layanan3">Analisa Produk dan Jasa Keuangan</a></h2>
               <br>
               <!-- <p>
                 Layanan Analisa Produk dan Jasa Keuangan adalah layanan kami yang dapat diakses klien baik secara online maupun offline. Layanan ini menumpukan pada jasa untuk melakukan analisa atas suatu produk atau jasa keuangan yang diajukan oleh klien.
@@ -240,7 +240,7 @@
                 <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Financial Health <br> Check</a></h2>
+              <h2 class="title"><a href="<?php echo base_url();?>layanan4">Financial Health <br> Check</a></h2>
               <br>
               <!-- <p> 
               Layanan Financial Health Check menekankan pada pemeriksaan tingkat kesehatan keuangan dari klien, dan melakukan pemeriksaan atas pos-pos yang dirasakan menjadi penyebab munculnya masalah pada kondisi finansial klien.

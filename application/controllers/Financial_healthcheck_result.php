@@ -76,6 +76,174 @@ class Financial_healthcheck_result extends CI_Controller {
         	$score_result = 'error';
         }
 
+        //set data variable1
+        if ($value_1 == $query[0]->value_1) {
+            $variable1 = $query[0]->variable_1;
+
+        } else if($value_1 == $query[0]->value_2) {
+            $variable1 = $query[0]->variable_2;
+
+        } else if($value_1 == $query[0]->value_3) {
+            $variable1 = $query[0]->variable_3;
+
+        } else {
+            $variable1 = $query[0]->variable_4;
+        }
+
+        //set data variable2
+        if ($value_2 == $query[1]->value_1) {
+            $variable2 = $query[1]->variable_1;
+
+        } else if($value_2 == $query[1]->value_2) {
+            $variable2 = $query[1]->variable_2;
+
+        } else if($value_2 == $query[1]->value_3) {
+            $variable2 = $query[1]->variable_3;
+
+        } else {
+            $variable2 = $query[1]->variable_4;
+        }
+
+        //set data variable3
+        if ($value_3 == $query[2]->value_1) {
+            $variable3 = $query[2]->variable_1;
+
+        } else if($value_3 == $query[2]->value_2) {
+            $variable3 = $query[2]->variable_2;
+
+        } else if($value_3 == $query[2]->value_3) {
+            $variable3 = $query[2]->variable_3;
+
+        } else {
+            $variable3 = $query[2]->variable_4;
+        }
+
+        //set data variable4
+        if ($value_4 == $query[3]->value_1) {
+            $variable4 = $query[3]->variable_1;
+
+        } else if($value_4 == $query[3]->value_2) {
+            $variable4 = $query[3]->variable_2;
+
+        } else if($value_4 == $query[3]->value_3) {
+            $variable4 = $query[3]->variable_3;
+
+        } else {
+            $variable4 = $query[3]->variable_4;
+        }
+
+        //set data variable5
+        if ($value_5 == $query[4]->value_1) {
+            $variable5 = $query[4]->variable_1;
+
+        } else if($value_5 == $query[4]->value_2) {
+            $variable5 = $query[4]->variable_2;
+
+        } else if($value_5 == $query[4]->value_3) {
+            $variable5 = $query[4]->variable_3;
+
+        } else {
+            $variable5 = $query[4]->variable_4;
+        }
+
+        //set data variable6
+        if ($value_6 == $query[5]->value_1) {
+            $variable6 = $query[5]->variable_1;
+
+        } else if($value_6 == $query[5]->value_2) {
+            $variable6 = $query[5]->variable_2;
+
+        } else if($value_6 == $query[5]->value_3) {
+            $variable6 = $query[5]->variable_3;
+
+        } else {
+            $variable6 = $query[5]->variable_4;
+        }
+
+        //set data variable7
+        if ($value_7 == $query[6]->value_1) {
+            $variable7 = $query[6]->variable_1;
+
+        } else if($value_7 == $query[6]->value_2) {
+            $variable7 = $query[6]->variable_2;
+
+        } else if($value_7 == $query[6]->value_3) {
+            $variable7 = $query[6]->variable_3;
+
+        } else {
+            $variable7 = $query[6]->variable_4;
+        }
+
+        //set data variable8
+        if ($value_8 == $query[7]->value_1) {
+            $variable8 = $query[7]->variable_1;
+
+        } else if($value_8 == $query[7]->value_2) {
+            $variable8 = $query[7]->variable_2;
+
+        } else if($value_8 == $query[7]->value_3) {
+            $variable8 = $query[7]->variable_3;
+
+        } else {
+            $variable8 = $query[7]->variable_4;
+        }
+
+        //set data variable9
+        if ($value_9 == $query[8]->value_1) {
+            $variable9 = $query[8]->variable_1;
+
+        } else if($value_9 == $query[8]->value_2) {
+            $variable9 = $query[8]->variable_2;
+
+        } else if($value_9 == $query[8]->value_3) {
+            $variable9 = $query[8]->variable_3;
+
+        } else {
+            $variable9 = $query[8]->variable_4;
+        }
+
+        //set data variable10
+        if ($value_10 == $query[9]->value_1) {
+            $variable10 = $query[9]->variable_1;
+
+        } else if($value_10 == $query[9]->value_2) {
+            $variable10 = $query[9]->variable_2;
+
+        } else if($value_10 == $query[9]->value_3) {
+            $variable10 = $query[9]->variable_3;
+
+        } else {
+            $variable10 = $query[9]->variable_4;
+        }
+
+        //set data variable11
+        if ($value_11 == $query[10]->value_1) {
+            $variable11 = $query[10]->variable_1;
+
+        } else if($value_11 == $query[10]->value_2) {
+            $variable11 = $query[10]->variable_2;
+
+        } else if($value_11 == $query[10]->value_3) {
+            $variable11 = $query[10]->variable_3;
+
+        } else {
+            $variable11 = $query[10]->variable_4;
+        }
+
+        //set data variable12
+        if ($value_12 == $query[11]->value_1) {
+            $variable12 = $query[11]->variable_1;
+
+        } else if($value_12 == $query[11]->value_2) {
+            $variable12 = $query[11]->variable_2;
+
+        } else if($value_12 == $query[11]->value_3) {
+            $variable12 = $query[11]->variable_3;
+
+        } else {
+            $variable12 = $query[11]->variable_4;
+        }
+
 	    $data = array(
             'email'   => $email,
             'value_1'   => $value_1,
@@ -104,6 +272,18 @@ class Financial_healthcheck_result extends CI_Controller {
             'question10' => $question10,
             'question11' => $question11,
             'question12' => $question12,
+            'variable1' => $variable1,
+            'variable2' => $variable2,
+            'variable3' => $variable3,
+            'variable4' => $variable4,
+            'variable5' => $variable5,
+            'variable6' => $variable6,
+            'variable7' => $variable7,
+            'variable8' => $variable8,
+            'variable9' => $variable9,
+            'variable10' => $variable10,
+            'variable11' => $variable11,
+            'variable12' => $variable12
 
         );
 
@@ -243,7 +423,7 @@ $table .= '
                           <label>'.$question1.'</label>    
                         </td>
                         <td style="width: 10%; text-align: center">
-                          <label>'.$value_1.'</label>
+                          <label>'.$variable1.'</label>
                         </td>
                       </tr>
                       
@@ -254,7 +434,7 @@ $table .= '
                           <label>'.$question2.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_2.'</label>
+                          <label>'.$variable2.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -263,7 +443,7 @@ $table .= '
                           <label>'.$question3.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_3.'</label>
+                          <label>'.$variable3.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -272,7 +452,7 @@ $table .= '
                           <label>'.$question4.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_4.'</label>
+                          <label>'.$variable4.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -281,7 +461,7 @@ $table .= '
                           <label>'.$question5.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_5.'</label>
+                          <label>'.$variable5.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -290,7 +470,7 @@ $table .= '
                           <label>'.$question6.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_6.'</label>
+                          <label>'.$variable6.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -299,7 +479,7 @@ $table .= '
                           <label>'.$question7.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_7.'</label>
+                          <label>'.$variable7.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -308,7 +488,7 @@ $table .= '
                           <label>'.$question8.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_8.'</label>
+                          <label>'.$variable8.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -317,7 +497,7 @@ $table .= '
                           <label>'.$question9.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_9.'</label>
+                          <label>'.$variable9.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -326,7 +506,7 @@ $table .= '
                           <label>'.$question10.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_10.'</label>
+                          <label>'.$variable10.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -335,7 +515,7 @@ $table .= '
                           <label>'.$question11.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_11.'</label>
+                          <label>'.$variable11.'</label>
                         </td>
                       </tr>
                       <tr>
@@ -344,7 +524,7 @@ $table .= '
                           <label>'.$question12.'</label>    
                         </td>
                         <td align="center">
-                          <label>'.$value_12.'</label>
+                          <label>'.$variable12.'</label>
                         </td>
                       </tr>
                 </tbody>
@@ -469,6 +649,174 @@ $pdf->Output(FCPATH  . '/assets/file/financial_health_check/'.$query2[0]->email.
     $email    = $query2[0]->email;
     $score    = $query2[0]->score;
     $score_result = $query2[0]->score_result;
+
+    //set data variable1
+        if ($value_1 == $query[0]->value_1) {
+            $variable1 = $query[0]->variable_1;
+
+        } else if($value_1 == $query[0]->value_2) {
+            $variable1 = $query[0]->variable_2;
+
+        } else if($value_1 == $query[0]->value_3) {
+            $variable1 = $query[0]->variable_3;
+
+        } else {
+            $variable1 = $query[0]->variable_4;
+        }
+
+        //set data variable2
+        if ($value_2 == $query[1]->value_1) {
+            $variable2 = $query[1]->variable_1;
+
+        } else if($value_2 == $query[1]->value_2) {
+            $variable2 = $query[1]->variable_2;
+
+        } else if($value_2 == $query[1]->value_3) {
+            $variable2 = $query[1]->variable_3;
+
+        } else {
+            $variable2 = $query[1]->variable_4;
+        }
+
+        //set data variable3
+        if ($value_3 == $query[2]->value_1) {
+            $variable3 = $query[2]->variable_1;
+
+        } else if($value_3 == $query[2]->value_2) {
+            $variable3 = $query[2]->variable_2;
+
+        } else if($value_3 == $query[2]->value_3) {
+            $variable3 = $query[2]->variable_3;
+
+        } else {
+            $variable3 = $query[2]->variable_4;
+        }
+
+        //set data variable4
+        if ($value_4 == $query[3]->value_1) {
+            $variable4 = $query[3]->variable_1;
+
+        } else if($value_4 == $query[3]->value_2) {
+            $variable4 = $query[3]->variable_2;
+
+        } else if($value_4 == $query[3]->value_3) {
+            $variable4 = $query[3]->variable_3;
+
+        } else {
+            $variable4 = $query[3]->variable_4;
+        }
+
+        //set data variable5
+        if ($value_5 == $query[4]->value_1) {
+            $variable5 = $query[4]->variable_1;
+
+        } else if($value_5 == $query[4]->value_2) {
+            $variable5 = $query[4]->variable_2;
+
+        } else if($value_5 == $query[4]->value_3) {
+            $variable5 = $query[4]->variable_3;
+
+        } else {
+            $variable5 = $query[4]->variable_4;
+        }
+
+        //set data variable6
+        if ($value_6 == $query[5]->value_1) {
+            $variable6 = $query[5]->variable_1;
+
+        } else if($value_6 == $query[5]->value_2) {
+            $variable6 = $query[5]->variable_2;
+
+        } else if($value_6 == $query[5]->value_3) {
+            $variable6 = $query[5]->variable_3;
+
+        } else {
+            $variable6 = $query[5]->variable_4;
+        }
+
+        //set data variable7
+        if ($value_7 == $query[6]->value_1) {
+            $variable7 = $query[6]->variable_1;
+
+        } else if($value_7 == $query[6]->value_2) {
+            $variable7 = $query[6]->variable_2;
+
+        } else if($value_7 == $query[6]->value_3) {
+            $variable7 = $query[6]->variable_3;
+
+        } else {
+            $variable7 = $query[6]->variable_4;
+        }
+
+        //set data variable8
+        if ($value_8 == $query[7]->value_1) {
+            $variable8 = $query[7]->variable_1;
+
+        } else if($value_8 == $query[7]->value_2) {
+            $variable8 = $query[7]->variable_2;
+
+        } else if($value_8 == $query[7]->value_3) {
+            $variable8 = $query[7]->variable_3;
+
+        } else {
+            $variable8 = $query[7]->variable_4;
+        }
+
+        //set data variable9
+        if ($value_9 == $query[8]->value_1) {
+            $variable9 = $query[8]->variable_1;
+
+        } else if($value_9 == $query[8]->value_2) {
+            $variable9 = $query[8]->variable_2;
+
+        } else if($value_9 == $query[8]->value_3) {
+            $variable9 = $query[8]->variable_3;
+
+        } else {
+            $variable9 = $query[8]->variable_4;
+        }
+
+        //set data variable10
+        if ($value_10 == $query[9]->value_1) {
+            $variable10 = $query[9]->variable_1;
+
+        } else if($value_10 == $query[9]->value_2) {
+            $variable10 = $query[9]->variable_2;
+
+        } else if($value_10 == $query[9]->value_3) {
+            $variable10 = $query[9]->variable_3;
+
+        } else {
+            $variable10 = $query[9]->variable_4;
+        }
+
+        //set data variable11
+        if ($value_11 == $query[10]->value_1) {
+            $variable11 = $query[10]->variable_1;
+
+        } else if($value_11 == $query[10]->value_2) {
+            $variable11 = $query[10]->variable_2;
+
+        } else if($value_11 == $query[10]->value_3) {
+            $variable11 = $query[10]->variable_3;
+
+        } else {
+            $variable11 = $query[10]->variable_4;
+        }
+
+        //set data variable12
+        if ($value_12 == $query[11]->value_1) {
+            $variable12 = $query[11]->variable_1;
+
+        } else if($value_12 == $query[11]->value_2) {
+            $variable12 = $query[11]->variable_2;
+
+        } else if($value_12 == $query[11]->value_3) {
+            $variable12 = $query[11]->variable_3;
+
+        } else {
+            $variable12 = $query[11]->variable_4;
+        }
     
     $isi = array(
             'question1' => $question1,
@@ -498,6 +846,18 @@ $pdf->Output(FCPATH  . '/assets/file/financial_health_check/'.$query2[0]->email.
             'value_12'   => $value_12,
             'score'     => $score,
             'score_result'  => $score_result,
+            'variable1' => $variable1,
+            'variable2' => $variable2,
+            'variable3' => $variable3,
+            'variable4' => $variable4,
+            'variable5' => $variable5,
+            'variable6' => $variable6,
+            'variable7' => $variable7,
+            'variable8' => $variable8,
+            'variable9' => $variable9,
+            'variable10' => $variable10,
+            'variable11' => $variable11,
+            'variable12' => $variable12
         );
 
 
@@ -515,7 +875,7 @@ $pdf->Output(FCPATH  . '/assets/file/financial_health_check/'.$query2[0]->email.
       'smtp_host' => 'smtp.gmail.com',
       'smtp_port' => 465,
       'smtp_user' => 'rencanakeuanganmu@gmail.com', 
-      'smtp_pass' => 'kl1n1kk3u4n64n', 
+      'smtp_pass' => 'R3nc4n4k3u4n64nmu', 
       'mailtype' => 'html',
       'charset' => 'utf-8',
       'smtp_crypto' => 'ssl',

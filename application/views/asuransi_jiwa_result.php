@@ -150,9 +150,9 @@
 			    </div>
           <button class="btn btn-primary btn-sm btn-block" type="submit" style="margin-bottom:10px">Send to email</button>
 			</form>
-      <form id="generate_to_pdf" method="post" action="<?php echo base_url()?>asuransi_jiwa_result/generate_to_pdf" role="form">
+      <!-- <form id="generate_to_pdf" method="post" action="<?php echo base_url()?>asuransi_jiwa_result/generate_to_pdf" role="form">
         <button class="btn btn-danger btn-sm btn-block" type="submit" style="margin-bottom:10px">Generate to PDF</button>
-      </form>
+      </form> -->
         <button class="btn btn-secondary btn-sm btn-block" type="" style="margin-bottom:10px" onclick="document.location.href='<?php echo base_url();?>'" >Cancel</button>
 		</div>
            </div>
