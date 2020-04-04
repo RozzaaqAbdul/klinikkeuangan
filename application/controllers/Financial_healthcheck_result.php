@@ -604,9 +604,9 @@ $pdf->Output(FCPATH  . '/assets/file/financial_health_check/'.$query2[0]->email.
 //============================================================+
 // END OF FILE
 //============================================================+
-
+$this->send_to_mail($query2[0]->email);
         //load page view
-        $this->load->view('financial_healthcheck_result', $data);
+        // $this->load->view('financial_healthcheck_result', $data);
 
 	}
 
@@ -865,8 +865,8 @@ $pdf->Output(FCPATH  . '/assets/file/financial_health_check/'.$query2[0]->email.
 
   }
 
-  public function send_to_mail() {
-    $email    = $this->input->post('email');
+  public function send_to_mail($email) {
+    // $email    = $this->input->post('email');
     $subject  ="Klinik Keuangan - Finance Health Check";
     $message  ="See the detail about Klinik Keuangan in attach file";
 

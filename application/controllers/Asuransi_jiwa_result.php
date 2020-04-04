@@ -228,12 +228,14 @@ if (!is_dir(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email)) {
 }
 $pdf->Output(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email.'/asuransi_jiwa.pdf', 'F');
 
-    $this->load->view('asuransi_jiwa_result', $data);
+
+$this->send_to_mail($data_asuransi[0]->email);    
+// $this->load->view('asuransi_jiwa_result', $data);
 
 }
 
 
-	public function insert(){
+public function insert(){
     $email		= $this->input->post('email');
     $value1     = $this->input->post('value1');
     $value2  	= $this->input->post('value2');
@@ -250,7 +252,6 @@ $pdf->Output(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email.'/
 
     $this->model_asuransijiwa->inputDataAsuransi($data,'asuransi_jiwa');
     
-
     redirect('asuransi_jiwa_result');
   }
 
@@ -261,8 +262,8 @@ $pdf->Output(FCPATH  . '/assets/file/asuransi_jiwa/'.$data_asuransi[0]->email.'/
 
   }
 
-  public function send_to_mail() {
-    $email    = $this->input->post('email');
+  public function send_to_mail($email) {
+    // $email    = $this->input->post('email');
     $subject  ="Klinik Keuangan - Perencanaan Proteksi dan Asuransi Jiwa";
     $message  ="See the detail about Klinik Keuangan in attach file";
 

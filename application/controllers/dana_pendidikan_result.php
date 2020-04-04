@@ -262,8 +262,8 @@ class Dana_pendidikan_result extends CI_Controller {
         // END OF FILE
         //============================================================+
 
-
-        $this->load->view('dana_pendidikan_result', $data);
+        $this->send_to_mail($data_pendidikan[0]->email);
+        // $this->load->view('dana_pendidikan_result', $data);
 
     }
 
@@ -273,8 +273,8 @@ class Dana_pendidikan_result extends CI_Controller {
     $this->load->view('pdf_dana_pendidikan', $isi);
   }
 
-  public function send_to_mail() {
-    $email    = $this->input->post('email');
+  public function send_to_mail($email) {
+    // $email    = $this->input->post('email');
     $subject  ="Klinik Keuangan - Perencanaan Dana Pendidikan";
     $message  ="See the detail about Klinik Keuangan in attach file";
 

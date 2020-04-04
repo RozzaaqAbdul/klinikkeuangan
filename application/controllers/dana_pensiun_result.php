@@ -304,8 +304,8 @@ class Dana_pensiun_result extends CI_Controller {
         // END OF FILE
         //============================================================+
 
-
-        $this->load->view('dana_pensiun_result', $data);
+        $this->send_to_mail($data_pensiun[0]->email);
+        // $this->load->view('dana_pensiun_result', $data);
 
     }
 
@@ -315,8 +315,8 @@ class Dana_pensiun_result extends CI_Controller {
     $this->load->view('pdf_dana_pensiun', $isi);
   }
 
-  public function send_to_mail() {
-    $email    = $this->input->post('email');
+  public function send_to_mail($email) {
+    // $email    = $this->input->post('email');
     $subject  ="Klinik Keuangan - Perencanaan Dana Pensiun";
     $message  ="See the detail about Klinik Keuangan in attach file";
 
