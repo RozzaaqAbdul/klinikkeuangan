@@ -89,7 +89,7 @@
                 </li>
             </ul>
           </li>
-          <li class="treeview">
+          <!-- <li class="treeview">
             <a href="#">
               <i class="mdi mdi-receipt"></i>
               <span>Kebutuhan Dana Pendidikan</span>
@@ -114,7 +114,7 @@
                 <li><a href="pages/asuransijiwa.html"><i class="mdi mdi-toggle-switch-off"></i>List</a></li>
                 <li><a href="pages/forms_validation.html"><i class="mdi mdi-toggle-switch-off"></i>Edit</a></li>
             </ul>
-          </li>
+          </li> -->
           
           <!-- TABEL ARTIKEL -->
 		  
